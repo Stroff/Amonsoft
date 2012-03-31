@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Preferences version="0.2.5">
+
+  <Compagnies>
+    <Compagnie>
+      <Compagnie>dd</Compagnie>
+      <Contact>dd</Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>tt</Compagnie>
+      <Contact>tt</Contact>
+      <Type>1</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>GENERALI</Compagnie>
+      <Contact>Nono</Contact>
+      <Type>0</Type>
+    </Compagnie>
+  </Compagnies>
+
+  <Epargnes>
+    <Nom>dd</Nom>
+  </Epargnes>
+
+  <Comptes>
+    <Nom>cc</Nom>
+  </Comptes>
+
+  <Cabinets>
+    <Cabinet Nom="dd" Type="0">
+      <Nom>tt</Nom>
+      <Nom>tt2</Nom>
+      <Nom>tt3</Nom>
+    </Cabinet>
+    <Cabinet Nom="dd2" Type="0">
+      <Nom>dfe</Nom>
+    </Cabinet>
+    <Cabinet Nom="ee" Type="1">
+      <Nom>gg</Nom>
+    </Cabinet>
+    <Cabinet Nom="Leroux" Type="1">
+      <Nom>Leroux</Nom>
+    </Cabinet>
+  </Cabinets>
+
+</Preferences>

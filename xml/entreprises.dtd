@@ -1,0 +1,69 @@
+<!ELEMENT Proche (#PCDATA)>
+<!ELEMENT Entreprise (#PCDATA | Adresse | CodeNAF | NumeroSiret | Activite | ConventionCollective | AGA | CGA | CollegueGerance | Proche | Autre | BeneficesN1 | BeneficesN2 | RegimeFiscale | DateCreation | SuiteEconomique | Telephone | Fax | SiteInternet | Gerants | Employes | Retraites | PEEOrganisme | PEEDate | Interessement | VersementN1 | VersementN2 | Salarie)*>
+<!ATTLIST Entreprise ID CDATA #IMPLIED>
+<!ATTLIST Entreprise RaisonSociale CDATA #IMPLIED>
+<!ATTLIST Entreprise Status CDATA #IMPLIED>
+<!ELEMENT AInteressement (#PCDATA)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT TauxAccident (#PCDATA)>
+<!ELEMENT NbAutre (#PCDATA)>
+<!ELEMENT Gerant (#PCDATA)>
+<!ATTLIST Gerant ID CDATA #IMPLIED>
+<!ATTLIST Gerant Parts CDATA #IMPLIED>
+<!ELEMENT CodeNAF (#PCDATA)>
+<!ELEMENT CollegueGerance (#PCDATA)>
+<!ELEMENT DateEffet (#PCDATA)>
+<!ELEMENT CGA (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT Fisc39 (#PCDATA)>
+<!ELEMENT NbNonCadres (#PCDATA)>
+<!ELEMENT AutresPP (#PCDATA)>
+<!ELEMENT TC (#PCDATA)>
+<!ELEMENT Gerants (#PCDATA | Gerant)*>
+<!ELEMENT PEEDate (#PCDATA)>
+<!ELEMENT ListeEntreprises (#PCDATA | Entreprise)*>
+<!ATTLIST ListeEntreprises version CDATA #IMPLIED>
+<!ELEMENT Retraites (#PCDATA | Retraite)*>
+<!ELEMENT Collegue (#PCDATA)>
+<!ELEMENT ComiteEntreprise (#PCDATA)>
+<!ELEMENT NbETAM (#PCDATA)>
+<!ELEMENT VersementN2 (#PCDATA)>
+<!ELEMENT Fisc82SD (#PCDATA)>
+<!ELEMENT Employe (#PCDATA)>
+<!ELEMENT VersementN1 (#PCDATA)>
+<!ELEMENT Fisc82AD (#PCDATA)>
+<!ELEMENT Salarie (#PCDATA | NbCadres | NbNonCadres | NbETAM | NbAutre | DeleguePersonnel | ComiteEntreprise | AInteressement | Interessement | ARRCOPS | ARRCOPP | AGIRCPS | AGIRCPP | AutresPS | AutresPP | CongesPayes | TauxAccident | TaxeTransports)*>
+<!ELEMENT ARRCOPP (#PCDATA)>
+<!ELEMENT Complement (#PCDATA)>
+<!ELEMENT AGIRCPP (#PCDATA)>
+<!ELEMENT Activite (#PCDATA)>
+<!ELEMENT ARRCOPS (#PCDATA)>
+<!ELEMENT Autre (#PCDATA)>
+<!ELEMENT SiteInternet (#PCDATA)>
+<!ELEMENT Ville (#PCDATA)>
+<!ELEMENT TA (#PCDATA)>
+<!ELEMENT PEEOrganisme (#PCDATA)>
+<!ELEMENT Interessement (#PCDATA)>
+<!ELEMENT DeleguePersonnel (#PCDATA)>
+<!ELEMENT TB (#PCDATA)>
+<!ELEMENT AGIRCPS (#PCDATA)>
+<!ELEMENT NbCadres (#PCDATA)>
+<!ELEMENT CodePostal (#PCDATA)>
+<!ELEMENT Adresse (#PCDATA | Rue | Complement | CodePostal | Ville)*>
+<!ELEMENT ConventionCollective (#PCDATA)>
+<!ELEMENT NumeroSiret (#PCDATA)>
+<!ELEMENT AGA (#PCDATA)>
+<!ELEMENT CongesPayes (#PCDATA)>
+<!ELEMENT SuiteEconomique (#PCDATA)>
+<!ELEMENT DateCreation (#PCDATA)>
+<!ELEMENT Employes (#PCDATA | Employe)*>
+<!ELEMENT TaxeTransports (#PCDATA)>
+<!ELEMENT BeneficesN2 (#PCDATA)>
+<!ELEMENT Retraite (#PCDATA | DateEffet | Compagnie | Collegue | TA | TB | TC | Fisc82 | Fisc82AD | Fisc82SD | Fisc39)*>
+<!ATTLIST Retraite Contrat CDATA #IMPLIED>
+<!ELEMENT RegimeFiscale (#PCDATA)>
+<!ELEMENT BeneficesN1 (#PCDATA)>
+<!ELEMENT AutresPS (#PCDATA)>
+<!ELEMENT Fisc82 (#PCDATA)>
+<!ELEMENT Compagnie (#PCDATA)>
+<!ELEMENT Rue (#PCDATA)>

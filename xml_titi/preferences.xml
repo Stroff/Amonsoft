@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Preferences version="0.1.10">
+
+  <Compagnies>
+    <Compagnie>
+      <Compagnie>GENERALI</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>APRIL</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>SWISS LIFE</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>ALPTIS</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>AVIVA</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>CARDIF</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>UNIM</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>UGIP</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>LA MONDIALE</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>SOCIETE GENERALE</Compagnie>
+      <Contact></Contact>
+      <Type>1</Type>
+    </Compagnie>
+    <Compagnie>
+      <Compagnie>ODDO</Compagnie>
+      <Contact></Contact>
+      <Type>0</Type>
+    </Compagnie>
+  </Compagnies>
+
+  <Epargnes>
+    <Nom>dd</Nom>
+  </Epargnes>
+
+  <Comptes>
+    <Nom>cc</Nom>
+  </Comptes>
+
+  <Cabinets>
+    <Cabinet Nom="Leroux" Type="1">
+      <Nom>Leroux</Nom>
+    </Cabinet>
+    <Cabinet Nom="@COM EXpertise" Type="0">
+      <Nom>Vayssettes Jean-Philippe</Nom>
+      <Nom>Negrié Marie-Josée</Nom>
+      <Nom>Marie-Pierre Cayzac</Nom>
+      <Nom>Gaelle Moisset</Nom>
+    </Cabinet>
+    <Cabinet Nom="Cabt MONTROZIER" Type="0">
+      <Nom>Montrozier Bruno</Nom>
+      <Nom>Turlan</Nom>
+    </Cabinet>
+    <Cabinet Nom="Cabt ROY" Type="0">
+      <Nom>Roy Philippe</Nom>
+    </Cabinet>
+    <Cabinet Nom="Cabt Mouysset" Type="2">
+      <Nom>Mouysset Eric</Nom>
+    </Cabinet>
+    <Cabinet Nom="Cabt TOURNIER" Type="0">
+      <Nom>Tournier Gilles</Nom>
+    </Cabinet>
+  </Cabinets>
+
+</Preferences>

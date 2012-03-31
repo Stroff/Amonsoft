@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ListeEntreprises version="0.2.5">
+
+  <Entreprise ID="1" RaisonSociale="dd" Status="SARL">
+    <Adresse>
+      <Rue>fff</Rue>
+      <Complement>fff</Complement>
+      <CodePostal>1120</CodePostal>
+      <Ville>fffff</Ville>
+    </Adresse>
+    <CodeNAF>111f</CodeNAF>
+    <NumeroSiret>444 444 444 44444</NumeroSiret>
+    <Activite>fddfdfd</Activite>
+    <ConventionCollective>fddfdfd</ConventionCollective>
+    <AGA>oui</AGA>
+    <CGA>oui</CGA>
+    <CollegueGerance>20</CollegueGerance>
+    <Proche>30</Proche>
+    <Autre>10</Autre>
+    <BeneficesN1>10</BeneficesN1>
+    <BeneficesN2>10</BeneficesN2>
+    <RegimeFiscale>IR</RegimeFiscale>
+    <!--Mettre un lien numerique vers le gérant-->
+    <DateCreation>01/04/2005</DateCreation>
+    <SuiteEconomique>1</SuiteEconomique>
+    <Telephone>00.00.00.00.00</Telephone>
+    <Fax>00.00.00.00.00</Fax>
+    <SiteInternet>http://www.Matete.com</SiteInternet>
+    <Gerants>
+      <Gerant ID="2" Parts="0"/>
+    </Gerants>
+    <Employes>
+      <Employe>3</Employe>
+    </Employes>
+    <Retraites>
+      <Retraite Contrat="44">
+        <DateEffet>2000-01-01</DateEffet>
+        <Compagnie>dd</Compagnie>
+        <Collegue>44</Collegue>
+        <TA>44</TA>
+        <TB>44</TB>
+        <TC>44</TC>
+        <Fisc82>44</Fisc82>
+        <Fisc82AD>44</Fisc82AD>
+        <Fisc82SD>44</Fisc82SD>
+        <Fisc39>44</Fisc39>
+      </Retraite>
+    </Retraites>
+    <PEEOrganisme>ggg</PEEOrganisme>
+    <PEEDate>2000-01-01</PEEDate>
+    <Interessement>non</Interessement>
+    <VersementN1>40</VersementN1>
+    <VersementN2>40</VersementN2>
+    <Salarie>
+      <NbCadres>4</NbCadres>
+      <NbNonCadres>4</NbNonCadres>
+      <NbETAM>4</NbETAM>
+      <NbAutre>4</NbAutre>
+      <DeleguePersonnel>non</DeleguePersonnel>
+      <ComiteEntreprise>non</ComiteEntreprise>
+      <AInteressement>oui</AInteressement>
+      <Interessement>tt</Interessement>
+      <ARRCOPS>44</ARRCOPS>
+      <ARRCOPP>44</ARRCOPP>
+      <AGIRCPS>444</AGIRCPS>
+      <AGIRCPP>44</AGIRCPP>
+      <AutresPS>444</AutresPS>
+      <AutresPP>44</AutresPP>
+      <CongesPayes>44</CongesPayes>
+      <TauxAccident>44</TauxAccident>
+      <TaxeTransports>44</TaxeTransports>
+    </Salarie>
+  </Entreprise>
+
+  <Entreprise ID="2" RaisonSociale="HH" Status="SARL">
+    <Adresse>
+      <Rue></Rue>
+      <Complement></Complement>
+      <CodePostal></CodePostal>
+      <Ville></Ville>
+    </Adresse>
+    <CodeNAF></CodeNAF>
+    <NumeroSiret></NumeroSiret>
+    <Activite></Activite>
+    <ConventionCollective></ConventionCollective>
+    <AGA>non</AGA>
+    <CGA>non</CGA>
+    <CollegueGerance>0</CollegueGerance>
+    <Proche>0</Proche>
+    <Autre>0</Autre>
+    <BeneficesN1>0</BeneficesN1>
+    <BeneficesN2>0</BeneficesN2>
+    <RegimeFiscale>IR</RegimeFiscale>
+    <!--Mettre un lien numerique vers le gérant-->
+    <DateCreation>//</DateCreation>
+    <SuiteEconomique>0</SuiteEconomique>
+    <Telephone>....</Telephone>
+    <Fax>....</Fax>
+    <SiteInternet>Site internet</SiteInternet>
+    <Gerants/>
+    <Employes/>
+    <Retraites/>
+    <PEEOrganisme></PEEOrganisme>
+    <PEEDate></PEEDate>
+    <Interessement>non</Interessement>
+    <VersementN1>0</VersementN1>
+    <VersementN2>0</VersementN2>
+    <Salarie>
+      <NbCadres>0</NbCadres>
+      <NbNonCadres>0</NbNonCadres>
+      <NbETAM>0</NbETAM>
+      <NbAutre>0</NbAutre>
+      <DeleguePersonnel>non</DeleguePersonnel>
+      <ComiteEntreprise>non</ComiteEntreprise>
+      <AInteressement>non</AInteressement>
+      <ARRCOPS>0</ARRCOPS>
+      <ARRCOPP>0</ARRCOPP>
+      <AGIRCPS>0</AGIRCPS>
+      <AGIRCPP>0</AGIRCPP>
+      <AutresPS>0</AutresPS>
+      <AutresPP>0</AutresPP>
+      <CongesPayes>0</CongesPayes>
+      <TauxAccident>0</TauxAccident>
+      <TaxeTransports>0</TaxeTransports>
+    </Salarie>
+  </Entreprise>
+
+</ListeEntreprises>

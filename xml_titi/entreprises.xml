@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ListeEntreprises version="0.1.10">
+
+  <Entreprise ID="1" RaisonSociale="dd" Status="SARL">
+    <Adresse>
+      <Rue></Rue>
+      <Complement></Complement>
+      <CodePostal></CodePostal>
+      <Ville></Ville>
+    </Adresse>
+    <CodeNAF></CodeNAF>
+    <NumeroSiret></NumeroSiret>
+    <Activite></Activite>
+    <ConventionCollective></ConventionCollective>
+    <AGA>non</AGA>
+    <CGA>non</CGA>
+    <CollegueGerance>0</CollegueGerance>
+    <Proche>0</Proche>
+    <Autre>0</Autre>
+    <BeneficesN1>0</BeneficesN1>
+    <BeneficesN2>0</BeneficesN2>
+    <RegimeFiscale>IS</RegimeFiscale>
+    <!--Mettre un lien numerique vers le gérant-->
+    <DateCreation>//</DateCreation>
+    <SuiteEconomique>0</SuiteEconomique>
+    <Telephone>....</Telephone>
+    <Fax>....</Fax>
+    <SiteInternet>Site internet</SiteInternet>
+    <Gerants>
+      <Gerant ID="64" Parts="0"/>
+    </Gerants>
+    <Employes/>
+    <Retraites/>
+    <Salarie>
+      <NbCadres>0</NbCadres>
+      <NbETAM>0</NbETAM>
+      <NbAutre>0</NbAutre>
+      <DeleguePersonnel>non</DeleguePersonnel>
+      <ComiteEntreprise>non</ComiteEntreprise>
+      <AInteressement>non</AInteressement>
+      <ARRCOPS>0</ARRCOPS>
+      <ARRCOPP>0</ARRCOPP>
+      <AGIRCPS>0</AGIRCPS>
+      <AGIRCPP>0</AGIRCPP>
+      <AutresPS>0</AutresPS>
+      <AutresPP>0</AutresPP>
+      <CongesPayes>0</CongesPayes>
+      <TauxAccident>0</TauxAccident>
+      <TaxeTransports>0</TaxeTransports>
+    </Salarie>
+  </Entreprise>
+
+</ListeEntreprises>

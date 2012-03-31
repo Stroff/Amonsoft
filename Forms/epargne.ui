@@ -1,0 +1,242 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgEpargne</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgEpargne</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>202</width>
+            <height>242</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>3</hsizetype>
+            <vsizetype>3</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Ajouter une retraite</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="8" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>layout58</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Valider</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonKo</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Annuler</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel20</cstring>
+            </property>
+            <property name="text">
+                <string>Date d'effet</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="2" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditInvAnnuel</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string> ; </string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel22</cstring>
+            </property>
+            <property name="text">
+                <string>Epargne (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel19</cstring>
+            </property>
+            <property name="text">
+                <string>Type</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="5" column="1" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>lineEditContrat</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textLabel21</cstring>
+            </property>
+            <property name="text">
+                <string>Inv. annuel (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="0" rowspan="2" colspan="3">
+            <property name="name">
+                <cstring>textLabel25</cstring>
+            </property>
+            <property name="text">
+                <string>Compagnie</string>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="4" column="4">
+            <property name="name">
+                <cstring>dateEditDateEpargne</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="0">
+            <property name="name">
+                <cstring>textLabel24</cstring>
+            </property>
+            <property name="text">
+                <string>Contrat</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditEpargne</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="0" column="3" rowspan="1" colspan="2">
+            <item>
+                <property name="text">
+                    <string>Loi Madelin</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Art. 83</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Art. 82</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>PERP</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>PERCO</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Art. 39</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>IFC</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Autre</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBoxTypeEpargne</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>textLabel23</cstring>
+            </property>
+            <property name="text">
+                <string>Date du terme</string>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="1" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>dateEditDateEffet</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="7" column="2" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>comboBoxCompagnie</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEpargne</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEpargne</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>comboBoxTypeEpargne</tabstop>
+    <tabstop>dateEditDateEffet</tabstop>
+    <tabstop>lineEditInvAnnuel</tabstop>
+    <tabstop>lineEditEpargne</tabstop>
+    <tabstop>dateEditDateEpargne</tabstop>
+    <tabstop>lineEditContrat</tabstop>
+    <tabstop>comboBoxCompagnie</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">epargne.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

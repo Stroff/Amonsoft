@@ -1,0 +1,165 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgRenteEducation</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgRenteEducation</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>231</width>
+            <height>260</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>7</hsizetype>
+            <vsizetype>7</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Ajouter une rente</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pixmapLabel1</cstring>
+            </property>
+            <property name="pixmap">
+                <pixmap>rente-education.png</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Montant de la rente (€)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="1">
+            <property name="name">
+                <cstring>lineEditPrevoyanceDecesRenteEducationMontant</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="text">
+                <string>Pourcentage salaire (%)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="2" column="1">
+            <property name="name">
+                <cstring>lineEditPrevoyanceDecesRenteEducationMontantPourcent</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesRenteEducationDe</cstring>
+            </property>
+            <property name="text">
+                <string>Age début</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesRenteEducationAu</cstring>
+            </property>
+            <property name="text">
+                <string>Age fin</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="4" column="1">
+            <property name="name">
+                <cstring>lineEditPrevoyanceDecesRenteEducationAu</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="1">
+            <property name="name">
+                <cstring>lineEditPrevoyanceDecesRenteEducationDu</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="5" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="6" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButtonKo</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgRenteEducation</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgRenteEducation</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditPrevoyanceDecesRenteEducationMontant</tabstop>
+    <tabstop>lineEditPrevoyanceDecesRenteEducationMontantPourcent</tabstop>
+    <tabstop>lineEditPrevoyanceDecesRenteEducationDu</tabstop>
+    <tabstop>lineEditPrevoyanceDecesRenteEducationAu</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">renteeducation.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

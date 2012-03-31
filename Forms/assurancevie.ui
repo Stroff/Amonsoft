@@ -1,0 +1,310 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgAssuranceVie</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgAssuranceVie</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>275</width>
+            <height>290</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Ajouter une assurance vie</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="7" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout61</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="3">
+                    <property name="name">
+                        <cstring>lineEditPEP</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="2">
+                    <property name="name">
+                        <cstring>textLabel33_2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>PEP</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>textLabel33_3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>MS</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="1">
+                    <property name="name">
+                        <cstring>lineEditMS</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="3">
+                    <property name="name">
+                        <cstring>lineEditFD</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>lineEditDSK</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="2">
+                    <property name="name">
+                        <cstring>textLabel33_4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>FD (€)</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel33</cstring>
+                    </property>
+                    <property name="text">
+                        <string>DSK</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QLayoutWidget" row="8" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout65</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Valider</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButtonKo</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Annuler</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLabel" row="3" column="0">
+            <property name="name">
+                <cstring>textLabel29</cstring>
+            </property>
+            <property name="text">
+                <string>Inv. annuel (€)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="0" column="1">
+            <property name="name">
+                <cstring>lineEditContrat</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel26</cstring>
+            </property>
+            <property name="text">
+                <string>Contrat</string>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="6" column="1">
+            <property name="name">
+                <cstring>dateEditDateCapital</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="0">
+            <property name="name">
+                <cstring>textLabel30</cstring>
+            </property>
+            <property name="text">
+                <string>Terme</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="4" column="1">
+            <property name="name">
+                <cstring>lineEditTerme</cstring>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="2" column="1">
+            <property name="name">
+                <cstring>dateEditEffet</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel27</cstring>
+            </property>
+            <property name="text">
+                <string>Compagnie</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="5" column="1">
+            <property name="name">
+                <cstring>lineEditCapital</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="0">
+            <property name="name">
+                <cstring>textLabel31</cstring>
+            </property>
+            <property name="text">
+                <string>K constitué (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="0">
+            <property name="name">
+                <cstring>textLabel32</cstring>
+            </property>
+            <property name="text">
+                <string>A la date</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="1">
+            <property name="name">
+                <cstring>lineEditInvAnnuel</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel28</cstring>
+            </property>
+            <property name="text">
+                <string>Date d'effet</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="1" column="1">
+            <property name="name">
+                <cstring>comboBoxCompagnie</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgAssuranceVie</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgAssuranceVie</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditContrat</tabstop>
+    <tabstop>comboBoxCompagnie</tabstop>
+    <tabstop>dateEditEffet</tabstop>
+    <tabstop>lineEditInvAnnuel</tabstop>
+    <tabstop>lineEditTerme</tabstop>
+    <tabstop>lineEditCapital</tabstop>
+    <tabstop>dateEditDateCapital</tabstop>
+    <tabstop>lineEditDSK</tabstop>
+    <tabstop>lineEditPEP</tabstop>
+    <tabstop>lineEditMS</tabstop>
+    <tabstop>lineEditFD</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">assurancevie.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

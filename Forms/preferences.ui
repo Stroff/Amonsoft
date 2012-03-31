@@ -1,0 +1,922 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgPreferences</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgPreferences</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>681</width>
+            <height>566</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Préférences</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>Layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>Horizontal Spacing2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QListBox" row="0" column="0">
+            <item>
+                <property name="text">
+                    <string>Préférences</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Compagnies</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Epargnes</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Comptes</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Conseillers</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>listBox</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QWidgetStack" row="0" column="1">
+            <property name="name">
+                <cstring>widgetStack1</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0" rowspan="1" colspan="4">
+                        <property name="name">
+                            <cstring>textLabel1_2</cstring>
+                        </property>
+                        <property name="sizePolicy">
+                            <sizepolicy>
+                                <hsizetype>7</hsizetype>
+                                <vsizetype>5</vsizetype>
+                                <horstretch>0</horstretch>
+                                <verstretch>0</verstretch>
+                            </sizepolicy>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h1&gt;&lt;p align="center"&gt;Liste des compagnies&lt;/p&gt;&lt;/h1&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Dénomination</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="4" column="0">
+                        <property name="name">
+                            <cstring>textLabel4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Contact</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="3" column="0">
+                        <property name="name">
+                            <cstring>textLabel3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Type</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox" row="3" column="1">
+                        <item>
+                            <property name="text">
+                                <string>Assurance</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Banque</string>
+                            </property>
+                        </item>
+                        <item>
+                            <property name="text">
+                                <string>Banque / Assurance</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>comboBoxCompagnieType</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit" row="2" column="1">
+                        <property name="name">
+                            <cstring>lineEditCompagnieDenomination</cstring>
+                        </property>
+                        <property name="frameShape">
+                            <enum>LineEditPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                            <enum>Sunken</enum>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit" row="4" column="1">
+                        <property name="name">
+                            <cstring>lineEditCompagnieContact</cstring>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="2" rowspan="3" colspan="1">
+                        <property name="name">
+                            <cstring>spacer33</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>100</width>
+                                <height>70</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QListView" row="1" column="0" rowspan="1" colspan="4">
+                        <column>
+                            <property name="text">
+                                <string>Compagnie</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Type</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Contact</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                    <item>
+                        <property name="text">
+                            <string>&lt;Nouveau&gt;</string>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                    </item>
+                        <property name="name">
+                            <cstring>listViewCompagnies</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="3">
+                        <property name="name">
+                            <cstring>pushButtonCompagnieValider</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Valider</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="3" column="3" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>pushButtonCompagnieSupprimer</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Supprimer</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>230</x>
+                            <y>10</y>
+                            <width>106</width>
+                            <height>24</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&lt;h2&gt;&lt;p align="center"&gt;Préférences&lt;/p&gt;&lt;/h2&gt;</string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>textLabel1_3</cstring>
+                    </property>
+                    <property name="geometry">
+                        <rect>
+                            <x>250</x>
+                            <y>120</y>
+                            <width>51</width>
+                            <height>20</height>
+                        </rect>
+                    </property>
+                    <property name="text">
+                        <string>&lt;i&gt;a venir ...&lt;/i&gt;</string>
+                    </property>
+                </widget>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>2</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0" rowspan="1" colspan="4">
+                        <property name="name">
+                            <cstring>textLabel5</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h1&gt;&lt;p align="center"&gt;Liste des comptes&lt;/p&gt;&lt;/h1&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel6</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Nom</string>
+                        </property>
+                    </widget>
+                    <widget class="QListView" row="1" column="0" rowspan="1" colspan="4">
+                        <column>
+                            <property name="text">
+                                <string>Nom</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                    <item>
+                        <property name="text">
+                            <string>&lt;Nouveau&gt;</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                    </item>
+                        <property name="name">
+                            <cstring>listViewComptes</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="3">
+                        <property name="name">
+                            <cstring>pushButtonComptesValider</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Valider</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="3" column="3">
+                        <property name="name">
+                            <cstring>pushButtonComptesSupprimer</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Supprimer</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit" row="2" column="1">
+                        <property name="name">
+                            <cstring>lineEditCompteNom</cstring>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="2" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>spacer64</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>260</width>
+                                <height>41</height>
+                            </size>
+                        </property>
+                    </spacer>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>3</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel" row="0" column="0" rowspan="1" colspan="4">
+                        <property name="name">
+                            <cstring>textLabel5_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h1&gt;&lt;p align="center"&gt;Liste des épargnes&lt;/p&gt;&lt;/h1&gt;</string>
+                        </property>
+                    </widget>
+                    <spacer row="2" column="2" rowspan="2" colspan="1">
+                        <property name="name">
+                            <cstring>spacer64_2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>260</width>
+                                <height>41</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QListView" row="1" column="0" rowspan="1" colspan="4">
+                        <column>
+                            <property name="text">
+                                <string>Nom</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                    <item>
+                        <property name="text">
+                            <string>&lt;Nouveau&gt;</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                    </item>
+                        <property name="name">
+                            <cstring>listViewEpargnes</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="2" column="3">
+                        <property name="name">
+                            <cstring>pushButtonEpargneValider</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Valider</string>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton" row="3" column="3">
+                        <property name="name">
+                            <cstring>pushButtonEpargneSupprimer</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Supprimer</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit" row="2" column="1">
+                        <property name="name">
+                            <cstring>lineEditEpargneNom</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel" row="2" column="0">
+                        <property name="name">
+                            <cstring>textLabel7</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Nom</string>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>WStackPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>4</number>
+                </attribute>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel1_4</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h1&gt;&lt;p align="center"&gt;Liste des conseillers&lt;/p&gt;&lt;/h1&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel2_2</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h2&gt;Bureau ou étude&lt;/h2&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QListView">
+                        <column>
+                            <property name="text">
+                                <string>Nom</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                        <column>
+                            <property name="text">
+                                <string>Type</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                    <item>
+                        <property name="text">
+                            <string>&lt;Nouveau&gt;</string>
+                        </property>
+                        <property name="text">
+                            <string></string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                    </item>
+                        <property name="name">
+                            <cstring>listViewBureau</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout2</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel3_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Nom</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>lineEditNomEtude</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel4_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Type</string>
+                                </property>
+                            </widget>
+                            <widget class="QComboBox">
+                                <item>
+                                    <property name="text">
+                                        <string>Cabinet comptable</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Etude notariale</string>
+                                    </property>
+                                </item>
+                                <item>
+                                    <property name="text">
+                                        <string>Cabinet avocats</string>
+                                    </property>
+                                </item>
+                                <property name="name">
+                                    <cstring>comboBoxTypeEtude</cstring>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButtonValiderBureau</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Valider</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButtonSupprimerEtude</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Supprimer</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textLabel5_3</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&lt;h2&gt;Conseillers&lt;/h2&gt;</string>
+                        </property>
+                    </widget>
+                    <widget class="QListView">
+                        <column>
+                            <property name="text">
+                                <string>Nom</string>
+                            </property>
+                            <property name="clickable">
+                                <bool>true</bool>
+                            </property>
+                            <property name="resizable">
+                                <bool>true</bool>
+                            </property>
+                        </column>
+                    <item>
+                        <property name="text">
+                            <string>&lt;Nouveau&gt;</string>
+                        </property>
+                        <property name="pixmap">
+                            <pixmap></pixmap>
+                        </property>
+                    </item>
+                        <property name="name">
+                            <cstring>listViewConseillers</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout3</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>textLabel6_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Nom</string>
+                                </property>
+                            </widget>
+                            <widget class="QLineEdit">
+                                <property name="name">
+                                    <cstring>lineEditNomConseillers</cstring>
+                                </property>
+                            </widget>
+                            <spacer>
+                                <property name="name">
+                                    <cstring>spacer5</cstring>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="sizeType">
+                                    <enum>Expanding</enum>
+                                </property>
+                                <property name="sizeHint">
+                                    <size>
+                                        <width>151</width>
+                                        <height>20</height>
+                                    </size>
+                                </property>
+                            </spacer>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButtonValiderConseillers</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Valider</string>
+                                </property>
+                            </widget>
+                            <widget class="QPushButton">
+                                <property name="name">
+                                    <cstring>pushButtonSupprimerConseillers</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>Supprimer</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>listBox</sender>
+        <signal>selectionChanged(QListBoxItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listBox_selectionChanged(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCompagnieValider</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonCompagnieValider_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonCompagnieSupprimer</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonCompagnieSupprimer_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>listViewCompagnies</sender>
+        <signal>currentChanged(QListViewItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listViewCompagnies_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>listViewEpargnes</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listViewEpargnes_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonEpargneValider</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonEpargneValider_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonEpargneSupprimer</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonEpargneSupprimer_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>listViewComptes</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listViewComptes_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonComptesValider</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonComptesValider_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonComptesSupprimer</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonComptesSupprimer_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>listViewBureau</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listViewBureau_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>listViewConseillers</sender>
+        <signal>selectionChanged(QListViewItem*)</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>listViewConseillers_selectionChanged(QListViewItem*)</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonValiderBureau</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonValiderBureau_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonSupprimerEtude</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonSupprimerEtude_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonValiderConseillers</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonValiderConseillers_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonSupprimerConseillers</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgPreferences</receiver>
+        <slot>pushButtonSupprimerConseillers_clicked()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>listBox</tabstop>
+    <tabstop>listViewBureau</tabstop>
+    <tabstop>lineEditNomEtude</tabstop>
+    <tabstop>comboBoxTypeEtude</tabstop>
+    <tabstop>pushButtonValiderBureau</tabstop>
+    <tabstop>pushButtonSupprimerEtude</tabstop>
+    <tabstop>listViewConseillers</tabstop>
+    <tabstop>lineEditNomConseillers</tabstop>
+    <tabstop>pushButtonValiderConseillers</tabstop>
+    <tabstop>pushButtonSupprimerConseillers</tabstop>
+    <tabstop>listViewCompagnies</tabstop>
+    <tabstop>lineEditCompagnieDenomination</tabstop>
+    <tabstop>comboBoxCompagnieType</tabstop>
+    <tabstop>lineEditCompagnieContact</tabstop>
+    <tabstop>pushButtonCompagnieValider</tabstop>
+    <tabstop>pushButtonCompagnieSupprimer</tabstop>
+    <tabstop>listViewComptes</tabstop>
+    <tabstop>lineEditCompteNom</tabstop>
+    <tabstop>pushButtonComptesValider</tabstop>
+    <tabstop>pushButtonComptesSupprimer</tabstop>
+    <tabstop>listViewEpargnes</tabstop>
+    <tabstop>lineEditEpargneNom</tabstop>
+    <tabstop>pushButtonEpargneValider</tabstop>
+    <tabstop>pushButtonEpargneSupprimer</tabstop>
+    <tabstop>buttonOk</tabstop>
+    <tabstop>buttonCancel</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">preferences.ui.h</include>
+</includes>
+<slots>
+    <slot>listBox_selectionChanged( QListBoxItem * item )</slot>
+    <slot>listViewCompagnies_selectionChanged( QListViewItem * item )</slot>
+    <slot>pushButtonCompagnieValider_clicked()</slot>
+    <slot>pushButtonCompagnieSupprimer_clicked()</slot>
+    <slot>listViewEpargnes_selectionChanged( QListViewItem * item )</slot>
+    <slot>pushButtonEpargneValider_clicked()</slot>
+    <slot>pushButtonEpargneSupprimer_clicked()</slot>
+    <slot>listViewComptes_selectionChanged( QListViewItem * item )</slot>
+    <slot>pushButtonComptesValider_clicked()</slot>
+    <slot>pushButtonComptesSupprimer_clicked()</slot>
+    <slot>listViewBureau_selectionChanged( QListViewItem * )</slot>
+    <slot>listViewConseillers_selectionChanged( QListViewItem * )</slot>
+    <slot>pushButtonValiderBureau_clicked()</slot>
+    <slot>pushButtonSupprimerEtude_clicked()</slot>
+    <slot>pushButtonValiderConseillers_clicked()</slot>
+    <slot>pushButtonSupprimerConseillers_clicked()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

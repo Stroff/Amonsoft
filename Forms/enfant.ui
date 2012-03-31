@@ -1,0 +1,259 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgEnfant</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgEnfant</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>262</width>
+            <height>236</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>1</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Ajouter un enfant</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout378</cstring>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>labelFamilleEnfantDateNaissance</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>32767</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>Date de naissance</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>lineEditFamilleNom</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>labelFamillePrenom</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Prénom</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="3" column="1" rowspan="1" colspan="2">
+                    <item>
+                        <property name="text">
+                            <string>Oui</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Non</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBoxFamilleEnfantAcharge</cstring>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>lineEditFamillePrenom</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="4" column="1" rowspan="1" colspan="2">
+                    <item>
+                        <property name="text">
+                            <string>Oui</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Non</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBoxFamilleFinancementEtudes</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="5" column="0">
+                    <property name="name">
+                        <cstring>labelFamilleNotes</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Notes</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="5" column="1" rowspan="1" colspan="2">
+                    <property name="name">
+                        <cstring>lineEditFamilleNotes</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>labelFamilleNom</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Nom</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0">
+                    <property name="name">
+                        <cstring>labelFamilleCharge</cstring>
+                    </property>
+                    <property name="enabled">
+                        <bool>true</bool>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>A charge</string>
+                    </property>
+                </widget>
+                <widget class="QDateEdit" row="2" column="2">
+                    <property name="name">
+                        <cstring>dateEditFamilleEnfantDateNaissance</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="4" column="0">
+                    <property name="name">
+                        <cstring>labelFamilleFinancementEtudes</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>&lt;p align="center"&gt;Financement des études&lt;/p&gt;</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>pushButtonKo</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="0">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEnfant</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEnfant</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditFamilleNom</tabstop>
+    <tabstop>lineEditFamillePrenom</tabstop>
+    <tabstop>dateEditFamilleEnfantDateNaissance</tabstop>
+    <tabstop>comboBoxFamilleEnfantAcharge</tabstop>
+    <tabstop>comboBoxFamilleFinancementEtudes</tabstop>
+    <tabstop>lineEditFamilleNotes</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">enfant.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

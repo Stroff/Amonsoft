@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ListFamilles version="0.1.10">
+
+  <Famille ID="3" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>4</RangMariage>
+    <NbEnfants>4</NbEnfants>
+    <NbEnfantsCommuns>6</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>-1</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+    </Enfants>
+  </Famille>
+
+  <Famille ID="5" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>non</DernierVivant>
+    <RangMariage>1</RangMariage>
+    <NbEnfants>9</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>-1</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+    </Enfants>
+  </Famille>
+
+  <Famille ID="8" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>1</RangMariage>
+    <NbEnfants>9</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>-1</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+    </Enfants>
+  </Famille>
+
+  <Famille ID="13" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>3</NbEnfants>
+    <NbEnfantsCommuns>2</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>14</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+  <Famille ID="18" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>3</NbEnfants>
+    <NbEnfantsCommuns>4</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>17</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+      <Enfant ACharge="oui" DateNaissance="" EnEtude="oui" Nom="" Prenom=""/>
+    </Enfants>
+  </Famille>
+
+  <Famille ID="28" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>2</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>29</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+  <Famille ID="30" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>2</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>31</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+  <Famille ID="58" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>non</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>2</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>59</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+  <Famille ID="64" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>oui</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>1</NbEnfants>
+    <NbEnfantsCommuns>1</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>65</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+  <Famille ID="330" type="Marie">
+    <DureePrecMariage>0</DureePrecMariage>
+    <DureePrecMariageConjoint>0</DureePrecMariageConjoint>
+    <RegimeMatrimonial>CommunauteUniverselle</RegimeMatrimonial>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <AutresDispositions></AutresDispositions>
+    <DernierVivant>non</DernierVivant>
+    <RangMariage>0</RangMariage>
+    <NbEnfants>2</NbEnfants>
+    <NbEnfantsCommuns>3</NbEnfantsCommuns>
+    <Testament></Testament>
+    <DonationEntreEpoux></DonationEntreEpoux>
+    <IDConjoint>117</IDConjoint>
+    <DureeMariagePrec>0</DureeMariagePrec>
+    <Enfants/>
+  </Famille>
+
+</ListFamilles>

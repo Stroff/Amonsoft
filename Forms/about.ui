@@ -1,0 +1,46 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgAbout</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgAbout</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>404</width>
+            <height>150</height>
+        </rect>
+    </property>
+    <property name="paletteBackgroundColor">
+        <color>
+            <red>255</red>
+            <green>255</green>
+            <blue>255</blue>
+        </color>
+    </property>
+    <property name="caption">
+        <string>A propos</string>
+    </property>
+    <hbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>textLabelAbout</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;h2&gt;A propos :&lt;/h2&gt;
+
+&lt;p align="center"&gt;Ce programme est la propriété conjointe de la société Amon et Sesam' micro.&lt;/p&gt;
+&lt;p align="center"&gt;Détail sur la licence dans le fichier licence.txt&lt;/p&gt;
+
+&lt;p align="left"&gt;&lt;b&gt;Copyright&lt;/b&gt; 2005-2006 Sesam' micro &lt;b&gt;Version&lt;/b&gt; 0.2 build 6&lt;/p&gt;</string>
+            </property>
+        </widget>
+    </hbox>
+</widget>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

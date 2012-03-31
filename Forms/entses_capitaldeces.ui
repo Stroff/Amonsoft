@@ -1,0 +1,224 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgCapitalDeces</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgCapitalDeces</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>381</width>
+            <height>209</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Capital décès</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Contrat</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Compagnie</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="8" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditTB</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="0" column="8" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditTA</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="2" column="8" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditTC</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="7">
+            <property name="name">
+                <cstring>textLabel10</cstring>
+            </property>
+            <property name="text">
+                <string>TC (%)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="7">
+            <property name="name">
+                <cstring>textLabel9</cstring>
+            </property>
+            <property name="text">
+                <string>TB (%)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="7">
+            <property name="name">
+                <cstring>textLabel8</cstring>
+            </property>
+            <property name="text">
+                <string>TA (%)</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="0" column="0" rowspan="1" colspan="6">
+            <item>
+                <property name="text">
+                    <string>Non cadres</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Cadres</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBoxTypeSal</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>lineEditContrat</cstring>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="2" column="2" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>comboBoxCompagnie</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="3" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>lineEditRenteConjoint</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0" rowspan="2" colspan="3">
+            <property name="name">
+                <cstring>textLabel6</cstring>
+            </property>
+            <property name="text">
+                <string>Rente conjoint (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>textLabel7</cstring>
+            </property>
+            <property name="text">
+                <string>Rente éducation (€)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="5" column="4" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditRenteEducation</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="7" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="text">
+                <string>CVD (%)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="9">
+            <property name="name">
+                <cstring>lineEditCVD</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="7" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>textLabel4</cstring>
+            </property>
+            <property name="text">
+                <string>M (%)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="4" column="8" rowspan="2" colspan="2">
+            <property name="name">
+                <cstring>lineEditM</cstring>
+            </property>
+        </widget>
+        <spacer row="0" column="6" rowspan="6" colspan="1">
+            <property name="name">
+                <cstring>spacer40</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>43</width>
+                    <height>120</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QLineEdit" row="6" column="2" rowspan="1" colspan="8">
+            <property name="name">
+                <cstring>lineEditMaj</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel5</cstring>
+            </property>
+            <property name="text">
+                <string>Maj/enf. (%)</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="7" column="5" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>pushButtonko</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="7" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>pushButtonok</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonko</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgCapitalDeces</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonok</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgCapitalDeces</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">entses_capitaldeces.ui.h</include>
+</includes>
+<slots>
+    <slot access="protected">Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

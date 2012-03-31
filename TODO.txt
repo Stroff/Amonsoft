@@ -1,0 +1,61 @@
+##
+##	Liste du travail restant à effectuer pour la réalisation du Amon soft.
+## $Header: /home/cvs/AmonSoft/AmonSoft\040-\040QT/TODO.txt,v 1.26 2007/02/06 19:04:45 pascal Exp $
+##
+
+Réalisé pour 0.3.0
+
+- Correction d'un bug dans l'exportation des personnes : Décalage du mois bilan
+- Recherche sur mois bilan
+
+
+
+
+
+- Réalisation de l'interface d'administration
+	- Gestion des droits utilisateurs : Support au niveau des objets !
+	
+- Cryptage des données XML
+
+- Réaliser l'interface Patrimoine
+
+- Mettre en place le module d'exportation vers Word, Excel
+
+- Prévoir un module d'impression
+
+- Optimiser les recherches dans les listes : utilisation d'index -> table de hash [En cours]
+
+- Surveiller les fuites éventuelles de mémoire
+
+- mettre des IDs pour les conseillers
+
+- Voir pourquoi il est impossible de créer les fichiers XML directement depuis le code, mais il faut utiliser des fichiers existants.
+
+- date de naissance -> mettre un lineEdit avec input mask
+
+- pour les listview (idem pour les comboBox), ne pas ajouter directement les valeurs dans l'element CPersonne ou CEntreprise, il faut les récupérer depuis la listView quand l'utilisateur clique sur "Valider"
+
+- Mettre des macros pour les importations XML
+
+- Envisager pour les préférences utiliser QSettings de QT
+
+////////////////////////////////////// URGENT ////////////////////////////////
+
+Oublis & bugs :
+
+- ajouter arret maladie remplacer les deux dates par durée
+
+- ATTENTION : Quand on supprime une personne vérifier les dépendances possibles dans une famille NOK
+----- A tester !! Apparamment un problème risque de se produire avec la suppression d'un prospect !!
+
++ on ne sauvegarde pas dans l'XML des CPersonnes le fait d'être gérant ou non
+
+- répercuter 'dans' dans les fonctions
+
+- faire des comparaisons entre différentes sauvegardes -> voir quels sont les champs qui changent spontannément
+
+- Un bug a été détecté sur les liens entre personne et gérant, il sera corrigé dans la prochaine version.
+
+Attention mettre deux la première image !!
+Generate Image collection use :
+D:\Sesam sources\AmonSoft - QT>uic -embed Forms/Img/AmonLogo.PNG Forms/Img/Arret-travail.png Forms/Img/btnLoad.jpg Forms/Img/btnSupprimer.jpg Forms/Img/carriere.PNG Forms/Img/dlg_emprunt.PNG Forms/Img/entreprise.PNG Forms/Img/epargne.PNG Forms/Img/etatcivil.PNG Forms/Img/famille.PNG Forms/Img/logo.png Forms/Img/patrimoine.PNG Forms/Img/prevoyance.PNG Forms/Img/rente-education.png Forms/Img/Splash.PNG Forms/Img/edient.jpg Forms/Img/edipers.jpg Forms/Img/ajouent.jpg Forms/Img/ajoupers.jpg -o qmake_image_collection.cpp

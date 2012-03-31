@@ -1,0 +1,287 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgGarantieDeces</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgGarantieDeces</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>576</width>
+            <height>140</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Ajouter une garantie décès</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QPushButton" row="3" column="4" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>pushButtonKo</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="3" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="9">
+            <property name="name">
+                <cstring>layout94</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelPrevoyanceDecesCapital1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Capital</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEditPrevoyanceDecesCapital</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelPrevoyanceDecesMaladie1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Maladie</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEditPrevoyanceDecesMaladie</cstring>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelPrevoyanceDecesAccident1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Accident</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEditPrevoyanceDecesAccident</cstring>
+                    </property>
+                    <property name="inputMask">
+                        <string></string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLayoutWidget" row="1" column="0" rowspan="1" colspan="9">
+            <property name="name">
+                <cstring>layout95</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelPrevoyanceDecesBeneficiaire1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Bénéficiaire</string>
+                    </property>
+                </widget>
+                <widget class="QComboBox">
+                    <item>
+                        <property name="text">
+                            <string>Famille</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Associés</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Banque</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Entreprise</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>Autre</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>comboBoxPrevoyanceDecesBeneficiaire</cstring>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>labelPrevoyanceDecesAutre1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Si autre preciser</string>
+                    </property>
+                </widget>
+                <widget class="QLineEdit">
+                    <property name="name">
+                        <cstring>lineEditPrevoyanceDecesPreciser</cstring>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesFiscalite1</cstring>
+            </property>
+            <property name="text">
+                <string>Fiscalité</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="2">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesCompagnie1</cstring>
+            </property>
+            <property name="text">
+                <string>Compagnie</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="5">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesDate1</cstring>
+            </property>
+            <property name="text">
+                <string>Date d'effet</string>
+            </property>
+        </widget>
+        <widget class="QDateEdit" row="2" column="6">
+            <property name="name">
+                <cstring>dateEditPrevoyanceDecesDateEffet</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="7">
+            <property name="name">
+                <cstring>labelPrevoyanceDecesDuree</cstring>
+            </property>
+            <property name="text">
+                <string>Durée</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="2" column="1">
+            <item>
+                <property name="text">
+                    <string>Assurance vie</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Madelin</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>comboBoxPrevoyanceDecesFiscalite</cstring>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="2" column="3" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>comboBoxPrevoyanceDecesCompagnie</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="2" column="8">
+            <property name="name">
+                <cstring>lineEditPrevoyanceDecesDuree</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>30</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgGarantieDeces</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgGarantieDeces</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditPrevoyanceDecesCapital</tabstop>
+    <tabstop>lineEditPrevoyanceDecesMaladie</tabstop>
+    <tabstop>lineEditPrevoyanceDecesAccident</tabstop>
+    <tabstop>comboBoxPrevoyanceDecesBeneficiaire</tabstop>
+    <tabstop>lineEditPrevoyanceDecesPreciser</tabstop>
+    <tabstop>comboBoxPrevoyanceDecesFiscalite</tabstop>
+    <tabstop>comboBoxPrevoyanceDecesCompagnie</tabstop>
+    <tabstop>dateEditPrevoyanceDecesDateEffet</tabstop>
+    <tabstop>lineEditPrevoyanceDecesDuree</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">garantiedeces.ui.h</include>
+</includes>
+<slots>
+    <slot access="protected">Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

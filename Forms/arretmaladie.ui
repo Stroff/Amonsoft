@@ -1,0 +1,164 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgArretMaladie</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgArretMaladie</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>252</width>
+            <height>186</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Arret Maladie</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="6" colspan="1">
+            <property name="name">
+                <cstring>pixmapLabel2</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="pixmap">
+                <pixmap>Arret-travail.png</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Indemnités journalières (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Franchise (€)</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditArretTravailMontant</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Montant emprunté</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="6" column="2">
+            <property name="name">
+                <cstring>pushButtonKo</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="6" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditArretTravailFranchise</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Durée</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="5" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditArretTravailDuree</cstring>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgArretMaladie</receiver>
+        <slot>Ok()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgArretMaladie</receiver>
+        <slot>close()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditArretTravailMontant</tabstop>
+    <tabstop>lineEditArretTravailFranchise</tabstop>
+    <tabstop>lineEditArretTravailDuree</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">arretmaladie.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

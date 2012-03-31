@@ -1,0 +1,13 @@
+<!ELEMENT Type (#PCDATA)>
+<!ELEMENT Compagnies (#PCDATA | Compagnie)*>
+<!ELEMENT Nom (#PCDATA)>
+<!ELEMENT Contact (#PCDATA)>
+<!ELEMENT Epargnes (#PCDATA | Nom)*>
+<!ELEMENT Comptes (#PCDATA | Nom)*>
+<!ELEMENT Cabinet (#PCDATA | Nom)*>
+<!ATTLIST Cabinet Nom CDATA #IMPLIED>
+<!ATTLIST Cabinet Type CDATA #IMPLIED>
+<!ELEMENT Preferences (#PCDATA | Compagnies | Epargnes | Comptes | Cabinets)*>
+<!ATTLIST Preferences version CDATA #IMPLIED>
+<!ELEMENT Compagnie (#PCDATA | Compagnie | Contact | Type)*>
+<!ELEMENT Cabinets (#PCDATA | Cabinet)*>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Proche" type="xs:string"/>
+  <xs:element name="Entreprise">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Adresse"/>
+        <xs:element ref="CodeNAF"/>
+        <xs:element ref="NumeroSiret"/>
+        <xs:element ref="Activite"/>
+        <xs:element ref="ConventionCollective"/>
+        <xs:element ref="AGA"/>
+        <xs:element ref="CGA"/>
+        <xs:element ref="CollegueGerance"/>
+        <xs:element ref="Proche"/>
+        <xs:element ref="Autre"/>
+        <xs:element ref="BeneficesN1"/>
+        <xs:element ref="BeneficesN2"/>
+        <xs:element ref="RegimeFiscale"/>
+        <xs:element ref="DateCreation"/>
+        <xs:element ref="SuiteEconomique"/>
+        <xs:element ref="Telephone"/>
+        <xs:element ref="Fax"/>
+        <xs:element ref="SiteInternet"/>
+        <xs:element ref="Gerants"/>
+        <xs:element ref="Employes"/>
+        <xs:element ref="Retraites"/>
+        <xs:element ref="PEEOrganisme"/>
+        <xs:element ref="PEEDate"/>
+        <xs:element ref="Interessement"/>
+        <xs:element ref="VersementN1"/>
+        <xs:element ref="VersementN2"/>
+        <xs:element ref="Salarie"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Entreprise"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Entreprise">
+    <xs:attribute name="ID"/>
+    <xs:attribute name="RaisonSociale"/>
+    <xs:attribute name="Status"/>
+  </xs:attributeGroup>
+  <xs:element name="AInteressement" type="xs:string"/>
+  <xs:element name="Telephone" type="xs:string"/>
+  <xs:element name="TauxAccident" type="xs:string"/>
+  <xs:element name="NbAutre" type="xs:string"/>
+  <xs:element name="Gerant">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Gerant"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Gerant">
+    <xs:attribute name="ID"/>
+    <xs:attribute name="Parts"/>
+  </xs:attributeGroup>
+  <xs:element name="CodeNAF" type="xs:string"/>
+  <xs:element name="CollegueGerance" type="xs:string"/>
+  <xs:element name="DateEffet" type="xs:string"/>
+  <xs:element name="CGA" type="xs:string"/>
+  <xs:element name="Fax" type="xs:string"/>
+  <xs:element name="Fisc39" type="xs:string"/>
+  <xs:element name="NbNonCadres" type="xs:string"/>
+  <xs:element name="AutresPP" type="xs:string"/>
+  <xs:element name="TC" type="xs:string"/>
+  <xs:element name="Gerants">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Gerant"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PEEDate" type="xs:string"/>
+  <xs:element name="ListeEntreprises">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Entreprise"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.ListeEntreprises"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.ListeEntreprises">
+    <xs:attribute name="version"/>
+  </xs:attributeGroup>
+  <xs:element name="Retraites">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Retraite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Collegue" type="xs:string"/>
+  <xs:element name="ComiteEntreprise" type="xs:string"/>
+  <xs:element name="NbETAM" type="xs:string"/>
+  <xs:element name="VersementN2" type="xs:string"/>
+  <xs:element name="Fisc82SD" type="xs:string"/>
+  <xs:element name="Employe" type="xs:string"/>
+  <xs:element name="VersementN1" type="xs:string"/>
+  <xs:element name="Fisc82AD" type="xs:string"/>
+  <xs:element name="Salarie">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="NbCadres"/>
+        <xs:element ref="NbNonCadres"/>
+        <xs:element ref="NbETAM"/>
+        <xs:element ref="NbAutre"/>
+        <xs:element ref="DeleguePersonnel"/>
+        <xs:element ref="ComiteEntreprise"/>
+        <xs:element ref="AInteressement"/>
+        <xs:element ref="Interessement"/>
+        <xs:element ref="ARRCOPS"/>
+        <xs:element ref="ARRCOPP"/>
+        <xs:element ref="AGIRCPS"/>
+        <xs:element ref="AGIRCPP"/>
+        <xs:element ref="AutresPS"/>
+        <xs:element ref="AutresPP"/>
+        <xs:element ref="CongesPayes"/>
+        <xs:element ref="TauxAccident"/>
+        <xs:element ref="TaxeTransports"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ARRCOPP" type="xs:string"/>
+  <xs:element name="Complement" type="xs:string"/>
+  <xs:element name="AGIRCPP" type="xs:string"/>
+  <xs:element name="Activite" type="xs:string"/>
+  <xs:element name="ARRCOPS" type="xs:string"/>
+  <xs:element name="Autre" type="xs:string"/>
+  <xs:element name="SiteInternet" type="xs:string"/>
+  <xs:element name="Ville" type="xs:string"/>
+  <xs:element name="TA" type="xs:string"/>
+  <xs:element name="PEEOrganisme" type="xs:string"/>
+  <xs:element name="Interessement" type="xs:string"/>
+  <xs:element name="DeleguePersonnel" type="xs:string"/>
+  <xs:element name="TB" type="xs:string"/>
+  <xs:element name="AGIRCPS" type="xs:string"/>
+  <xs:element name="NbCadres" type="xs:string"/>
+  <xs:element name="CodePostal" type="xs:string"/>
+  <xs:element name="Adresse">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Rue"/>
+        <xs:element ref="Complement"/>
+        <xs:element ref="CodePostal"/>
+        <xs:element ref="Ville"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConventionCollective" type="xs:string"/>
+  <xs:element name="NumeroSiret" type="xs:string"/>
+  <xs:element name="AGA" type="xs:string"/>
+  <xs:element name="CongesPayes" type="xs:string"/>
+  <xs:element name="SuiteEconomique" type="xs:string"/>
+  <xs:element name="DateCreation" type="xs:string"/>
+  <xs:element name="Employes">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Employe"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TaxeTransports" type="xs:string"/>
+  <xs:element name="BeneficesN2" type="xs:string"/>
+  <xs:element name="Retraite">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Collegue"/>
+        <xs:element ref="TA"/>
+        <xs:element ref="TB"/>
+        <xs:element ref="TC"/>
+        <xs:element ref="Fisc82"/>
+        <xs:element ref="Fisc82AD"/>
+        <xs:element ref="Fisc82SD"/>
+        <xs:element ref="Fisc39"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Retraite"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Retraite">
+    <xs:attribute name="Contrat"/>
+  </xs:attributeGroup>
+  <xs:element name="RegimeFiscale" type="xs:string"/>
+  <xs:element name="BeneficesN1" type="xs:string"/>
+  <xs:element name="AutresPS" type="xs:string"/>
+  <xs:element name="Fisc82" type="xs:string"/>
+  <xs:element name="Compagnie" type="xs:string"/>
+  <xs:element name="Rue" type="xs:string"/>
+</xs:schema>

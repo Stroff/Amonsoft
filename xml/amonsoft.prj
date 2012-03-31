@@ -1,0 +1,221 @@
+
+<project type="cont" name="amonsoft" expanded="yes" catalog="no" pluginOwner="-1">
+	<file plugId="2" URL="personnes.xsl">
+		<scenarios>
+			<scenario default="yes" name="Scenario1" userelativepaths="yes" externalpreview="yes" url="file:///c:/Documents and Settings/Propriétaire/Bureau/export.xml" htmlbaseurl=""
+			          outputurl="file:///c:/Documents and Settings/Propriétaire/Bureau/toto.xml" processortype="internal" useresolver="yes" profilemode="0" profiledepth="" profilelength="" urlprofilexml="" commandline="" additionalpath=""
+			          additionalclasspath="" postprocessortype="none" postprocesscommandline="" postprocessadditionalpath="" postprocessgeneratedext="" validateoutput="yes" validator="internal" customvalidator="">
+				<validatorSchema value="personnes.xsd"/>
+			</scenario>
+		</scenarios>
+		<MapperMetaTag>
+			<MapperInfo srcSchemaPathIsRelative="yes" srcSchemaInterpretAsXML="no" destSchemaPath="" destSchemaRoot="" destSchemaPathIsRelative="yes" destSchemaInterpretAsXML="no">
+				<SourceSchema srcSchemaPath="personnes.xml" srcSchemaRoot="ListPersonnes" AssociatedInstance="" loaderFunction="document" loaderFunctionUsesURI="no"/>
+			</MapperInfo>
+			<MapperBlockPosition>
+				<template match="/">
+					<block path="p[1]/xsl:value-of" x="253" y="144"/>
+					<block path="p[1]/xsl:value-of[1]" x="293" y="144"/>
+					<block path="p[1]/xsl:value-of[2]" x="213" y="144"/>
+					<block path="p[1]/xsl:choose" x="103" y="114"/>
+					<block path="p[1]/xsl:choose/=[0]" x="57" y="108"/>
+					<block path="" x="162" y="144"/>
+					<block path="p[1]/xsl:if" x="84" y="192"/>
+					<block path="p[1]/xsl:if/xsl:value-of" x="293" y="104"/>
+					<block path="p[1]/xsl:value-of[3]" x="173" y="104"/>
+					<block path="p[1]/xsl:value-of[4]" x="53" y="104"/>
+					<block path="p[2]/table/tbody/tr[1]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[2]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[2]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[3]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[3]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[4]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[4]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[5]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[5]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[6]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[6]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[7]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[8]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[2]/table/tbody/tr[8]/td[1]/xsl:value-of[1]" x="253" y="141"/>
+					<block path="p[3]/xsl:for-each" x="223" y="111"/>
+					<block path="p[3]/xsl:for-each/xsl:value-of" x="13" y="101"/>
+					<block path="p[3]/xsl:for-each/xsl:value-of[1]" x="293" y="61"/>
+					<block path="p[3]/xsl:for-each/xsl:value-of[2]" x="173" y="61"/>
+					<block path="p[4]/table/tbody/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr/td[1]/xsl:value-of[1]" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[1]/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[2]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[2]/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[3]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[3]/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[4]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[4]/table/tbody/tr[5]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[5]/table/tbody/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[5]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[5]/table/tbody/tr[2]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[5]/table/tbody/tr[3]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[6]/xsl:value-of" x="133" y="61"/>
+					<block path="p[8]/table/tbody/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[8]/table/tbody/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[8]/table/tbody/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[8]/table/tbody/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each" x="93" y="221"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[9]/table/tbody/xsl:for-each/tr/td[6]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each" x="53" y="221"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[6]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[7]/xsl:value-of" x="253" y="141"/>
+					<block path="p[11]/table/tbody/xsl:for-each/tr/td[8]/xsl:value-of" x="253" y="141"/>
+					<block path="p[12]/table/tbody/xsl:for-each" x="13" y="221"/>
+					<block path="p[12]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[12]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[13]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[13]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[13]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[14]/xsl:value-of" x="93" y="61"/>
+					<block path="p[14]/xsl:value-of[1]" x="53" y="61"/>
+					<block path="p[14]/xsl:value-of[2]" x="13" y="61"/>
+					<block path="p[15]/xsl:value-of" x="253" y="21"/>
+					<block path="p[15]/xsl:value-of[1]" x="293" y="21"/>
+					<block path="p[15]/xsl:value-of[2]" x="213" y="21"/>
+					<block path="p[15]/xsl:value-of[3]" x="173" y="21"/>
+					<block path="p[16]/xsl:value-of" x="133" y="21"/>
+					<block path="p[17]/xsl:value-of" x="93" y="21"/>
+					<block path="p[17]/xsl:value-of[1]" x="53" y="21"/>
+					<block path="p[17]/xsl:value-of[2]" x="13" y="21"/>
+					<block path="p[17]/xsl:value-of[3]" x="253" y="181"/>
+					<block path="p[18]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[18]/table/tbody/xsl:for-each/tr/td[6]/xsl:value-of" x="253" y="141"/>
+					<block path="p[19]/xsl:value-of" x="293" y="181"/>
+					<block path="p[19]/xsl:value-of[1]" x="213" y="181"/>
+					<block path="p[19]/xsl:value-of[2]" x="173" y="181"/>
+					<block path="p[20]/xsl:value-of" x="133" y="181"/>
+					<block path="p[20]/xsl:value-of[1]" x="93" y="181"/>
+					<block path="p[20]/xsl:value-of[2]" x="53" y="181"/>
+					<block path="p[20]/xsl:value-of[3]" x="13" y="181"/>
+					<block path="p[21]/xsl:value-of" x="253" y="221"/>
+					<block path="p[21]/xsl:value-of[1]" x="293" y="221"/>
+					<block path="p[21]/xsl:value-of[2]" x="213" y="221"/>
+					<block path="p[23]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[23]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[23]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[23]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[24]/table/tbody/tr[1]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[24]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[24]/table/tbody/tr[1]/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[24]/table/tbody/tr[1]/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[6]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[7]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[8]/xsl:value-of" x="253" y="141"/>
+					<block path="p[25]/table/tbody/tr[1]/td[9]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[2]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[3]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[4]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[5]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[6]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[26]/table/tbody/tr[7]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[6]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[7]/xsl:value-of" x="253" y="141"/>
+					<block path="p[27]/table/tbody/xsl:for-each/tr/td[8]/xsl:value-of" x="253" y="141"/>
+					<block path="p[28]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[28]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[28]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[28]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[28]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[29]/xsl:value-of" x="173" y="221"/>
+					<block path="p[31]/table/tbody/xsl:for-each" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td/xsl:value-of" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td[2]/xsl:value-of" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td[3]/xsl:value-of" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td[4]/xsl:value-of" x="253" y="141"/>
+					<block path="p[31]/table/tbody/xsl:for-each/tr/td[5]/xsl:value-of" x="253" y="141"/>
+					<block path="p[32]/xsl:value-of" x="133" y="221"/>
+					<block path="p[33]/u/table/tbody/tr/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[33]/u/table/tbody/tr[1]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[33]/u/table/tbody/tr[2]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[33]/u/table/tbody/tr[3]/td[1]/xsl:value-of" x="253" y="141"/>
+					<block path="p[33]/u/table/tbody/tr[4]/td[1]/xsl:value-of" x="253" y="141"/>
+				</template>
+			</MapperBlockPosition>
+			<TemplateContext></TemplateContext>
+			<MapperFilter side="source"></MapperFilter>
+		</MapperMetaTag>
+	</file>
+	<file plugId="3" URL="entreprises.dtd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="entreprises.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="entreprises.xsd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="familles.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="personnes.dtd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="personnes.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="personnes.xsd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="preferences.dtd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="preferences.xml" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+	<file plugId="3" URL="preferences.xsd" catalog="no">
+		<queries/>
+		<namespaces/>
+	</file>
+</project>

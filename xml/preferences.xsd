@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Type" type="xs:string"/>
+  <xs:element name="Compagnies">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Compagnie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Nom" type="xs:string"/>
+  <xs:element name="Contact" type="xs:string"/>
+  <xs:element name="Epargnes">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Nom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Comptes">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Nom"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cabinet">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Nom"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.Cabinet"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Cabinet">
+    <xs:attribute name="Nom"/>
+    <xs:attribute name="Type"/>
+  </xs:attributeGroup>
+  <xs:element name="Preferences">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Compagnies"/>
+        <xs:element ref="Epargnes"/>
+        <xs:element ref="Comptes"/>
+        <xs:element ref="Cabinets"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Preferences"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Preferences">
+    <xs:attribute name="version"/>
+  </xs:attributeGroup>
+  <xs:element name="Compagnie">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Contact"/>
+        <xs:element ref="Type"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cabinets">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Cabinet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

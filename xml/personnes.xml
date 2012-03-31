@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ListPersonnes version="0.2.5">
+
+  <Personne Beneficiaire="oui" Civilite="Mr" ID="2" Nom="Simon" Prenom="toto">
+    <NomJeuneFille>test</NomJeuneFille>
+    <DateNaissance>2000-10-24</DateNaissance>
+    <LieuNaissance>test</LieuNaissance>
+    <Adresse>
+      <Rue>test</Rue>
+      <Complement>test</Complement>
+      <CodePostal>31125</CodePostal>
+      <Ville>test</Ville>
+    </Adresse>
+    <Telephone>05.65.78.54.30</Telephone>
+    <TelephonePortable>06.66.33.22.11</TelephonePortable>
+    <TelephonePro>01.12.25.23.23</TelephonePro>
+    <Fax>22.22.22.22.22</Fax>
+    <Mail>test@test.com</Mail>
+    <AdresseGestion>
+      <Rue>test</Rue>
+      <Complement>test</Complement>
+      <CodePostal>11250</CodePostal>
+      <Ville>test</Ville>
+    </AdresseGestion>
+    <Besoins>
+      <Prevoyance>test</Prevoyance>
+      <Retraite>test</Retraite>
+      <Epargne>test</Epargne>
+      <Patrimoine>test</Patrimoine>
+      <Sante>test</Sante>
+    </Besoins>
+    <Notes>test</Notes>
+    <LienEntreprise>1</LienEntreprise>
+    <Gerant>0</Gerant>
+    <Conseillers>
+      <Conseiller Nom="" Societe="" Type="2"/>
+      <Conseiller Nom="gg" Societe="ee" Type="1"/>
+      <Conseiller Nom="tt" Societe="dd" Type="0"/>
+    </Conseillers>
+    <Revenus>
+      <SalaireAnnuel>25000</SalaireAnnuel>
+      <TypeSalaire>brut</TypeSalaire>
+      <AutresRevenus>25000</AutresRevenus>
+      <BIC>25</BIC>
+      <BNC>25</BNC>
+      <Dividendes>25</Dividendes>
+      <RevenusFonciers>25</RevenusFonciers>
+      <StatusPro>3</StatusPro>
+      <MoisBilan>2</MoisBilan>
+      <Employeur>test</Employeur>
+      <Fonction>test</Fonction>
+    </Revenus>
+    <Fiscalite>
+      <Montant>250</Montant>
+      <ISF>oui</ISF>
+      <MontantISF>0</MontantISF>
+      <CGA_VGA>oui</CGA_VGA>
+      <Deductions>250</Deductions>
+    </Fiscalite>
+    <Epargne Sensibilite="0">
+      <Motivation>
+        <Motivation1>0</Motivation1>
+        <Motivation2>3</Motivation2>
+        <Motivation3>2</Motivation3>
+        <Motivation4>1</Motivation4>
+      </Motivation>
+      <Retraites>
+        <Retraite type="0">
+          <DateEffet>1999-02-02</DateEffet>
+          <InvAnnuel>5</InvAnnuel>
+          <MontantEpargne>250</MontantEpargne>
+          <DateEpargne>1999-02-02</DateEpargne>
+          <Contrat>test</Contrat>
+          <Compagnie>GENERALI</Compagnie>
+        </Retraite>
+        <Retraite type="0">
+          <DateEffet>1999-02-02</DateEffet>
+          <InvAnnuel>1440</InvAnnuel>
+          <MontantEpargne>20</MontantEpargne>
+          <DateEpargne>1999-02-02</DateEpargne>
+          <Contrat>La Retraite</Contrat>
+          <Compagnie>GENERALI</Compagnie>
+        </Retraite>
+      </Retraites>
+      <AssuranceVies>
+        <AssuranceVie>
+          <Contrat>pp</Contrat>
+          <Compagnie></Compagnie>
+          <DateEffet>1999-02-02</DateEffet>
+          <InvAnnuel>30</InvAnnuel>
+          <Terme>1999/02/02</Terme>
+          <Capital>30</Capital>
+          <DateCapital>1999-02-02</DateCapital>
+          <DSK>250</DSK>
+          <PEP>250</PEP>
+          <MS>250</MS>
+          <FD>250</FD>
+        </AssuranceVie>
+      </AssuranceVies>
+      <Comptes>
+        <Compte type="0">
+          <Compagnie></Compagnie>
+          <DateEffet>1999-02-02</DateEffet>
+          <InvAnnuel>30</InvAnnuel>
+          <Terme>1999/02/02</Terme>
+          <Capital>40</Capital>
+          <DateCapital>1999-02-02</DateCapital>
+          <Rendement>20</Rendement>
+          <Notes>test</Notes>
+        </Compte>
+        <Compte type="0">
+          <Compagnie>tt</Compagnie>
+          <DateEffet>1999-02-02</DateEffet>
+          <InvAnnuel>30</InvAnnuel>
+          <Terme>1999/02/02</Terme>
+          <Capital>200</Capital>
+          <DateCapital>1999-02-02</DateCapital>
+          <Rendement>50</Rendement>
+          <Notes>test</Notes>
+        </Compte>
+      </Comptes>
+      <Revenus>
+        <Revenu Designation="test" Montant="10"/>
+      </Revenus>
+      <Charges>
+        <Charge Designation="test" Montant="10"/>
+      </Charges>
+    </Epargne>
+    <Prevoyance>
+      <NiveauGaranties>20</NiveauGaranties>
+      <IndiceSatisfaction>20</IndiceSatisfaction>
+      <CotisationAnnuelle>30</CotisationAnnuelle>
+      <Fiscalite>TT</Fiscalite>
+      <Contrat>GG</Contrat>
+      <Compagnie>dd</Compagnie>
+      <Beneficiaires>1</Beneficiaires>
+      <Notes>test</Notes>
+      <Viager EnViager="non" type="Professionnel"/>
+      <DateEffet>1999-02-02</DateEffet>
+      <Source>Amon</Source>
+      <ListeCouvertureEmprunt>
+        <Emprunt Banque="11" Debut="" Franchise="111" Montant="222" TauxMoyen="52685" Terme="52685" TypeEmprunt=""/>
+      </ListeCouvertureEmprunt>
+      <ArretMaladie>
+        <AccordAssocies>oui</AccordAssocies>
+        <DateEffet>1999-02-02</DateEffet>
+        <DateMiseAJour>1999-02-02</DateMiseAJour>
+        <Compagnie>dd</Compagnie>
+        <Contrat>tt</Contrat>
+        <Fiscalite>0</Fiscalite>
+        <DureeAccord>5</DureeAccord>
+        <FranchiseAccident>20</FranchiseAccident>
+        <FranchiseHopital>25</FranchiseHopital>
+        <FranchiseMaladie>35</FranchiseMaladie>
+        <ListeArretTravail>
+          <Arret Duree="0" Franchise="5" Montant="12"/>
+          <Arret Duree="1095" Franchise="90" Montant="15"/>
+          <Arret Duree="90" Franchise="15" Montant="15"/>
+        </ListeArretTravail>
+      </ArretMaladie>
+      <FraisGeneraux>
+        <Compagnie>tt</Compagnie>
+        <Contrat>ff</Contrat>
+        <CouvertureMensuelle>25</CouvertureMensuelle>
+        <Franchise>20</Franchise>
+        <Notes>test</Notes>
+      </FraisGeneraux>
+      <Invalidite Professionnel="oui">
+        <DateEffet>1999-02-02</DateEffet>
+        <DateMiseAJour>1999-02-02</DateMiseAJour>
+        <Compagnie>dd</Compagnie>
+        <Fiscalite>0</Fiscalite>
+        <Notes>test</Notes>
+        <CapitauxInvalidite60>50</CapitauxInvalidite60>
+        <RenteInvalidite100>50</RenteInvalidite100>
+        <RenteInvalidite66>50</RenteInvalidite66>
+        <RenteInvalidite33>50</RenteInvalidite33>
+      </Invalidite>
+      <Deces>
+        <DateEffetConjoint>1999-02-02</DateEffetConjoint>
+        <DateEffetEducation>1999-02-02</DateEffetEducation>
+        <CompagnieConjoint>dd</CompagnieConjoint>
+        <FiscaliteConjoint>1</FiscaliteConjoint>
+        <FiscaliteEducation>1</FiscaliteEducation>
+        <DureeRenteConjoint>5</DureeRenteConjoint>
+        <MontantRenteConjoint>550</MontantRenteConjoint>
+        <CompagnieEducation>dd</CompagnieEducation>
+        <Notes>test</Notes>
+        <ListeGarantiesDeces>
+          <GarantieDeces Accident="11" Autre="" Beneficiaire="1" Capitaux="22" Compagnie="tt" DateEffet="" Duree="11" Fiscalite="1" Maladie="111"/>
+          <GarantieDeces Accident="0" Autre="" Beneficiaire="0" Capitaux="5" Compagnie="tt" DateEffet="" Duree="2" Fiscalite="0" Maladie="5"/>
+        </ListeGarantiesDeces>
+        <ListeRenteEducation>
+          <Rente Debut="5" Fin="10" Montant="0" Pourcentage="5"/>
+        </ListeRenteEducation>
+      </Deces>
+    </Prevoyance>
+    <Carriere>
+      <AgeRetraite>50</AgeRetraite>
+      <Emplois>
+        <Emploi DateEntree="1999-02-02" DateFin="1999-02-02" PointsRCO="20" Revenus="20" Statut="3">
+          <Note>essai</Note>
+        </Emploi>
+        <Emploi DateEntree="" DateFin="" PointsRCO="1" Revenus="14" Statut="2">
+          <Note></Note>
+        </Emploi>
+        <Emploi DateEntree="" DateFin="" PointsRCO="0" Revenus="0" Statut="0">
+          <Note></Note>
+        </Emploi>
+      </Emplois>
+    </Carriere>
+  </Personne>
+
+  <Personne Beneficiaire="non" Civilite="Mr" ID="3" Nom="Lauriane" Prenom="Marcel">
+    <NomJeuneFille></NomJeuneFille>
+    <DateNaissance>1979-06-15</DateNaissance>
+    <LieuNaissance>Rodez</LieuNaissance>
+    <Adresse>
+      <Rue>12 rue des fleurs</Rue>
+      <Complement></Complement>
+      <CodePostal>12000</CodePostal>
+      <Ville>Rodez</Ville>
+    </Adresse>
+    <Telephone>05.65.68.79.43</Telephone>
+    <TelephonePortable>....</TelephonePortable>
+    <TelephonePro>....</TelephonePro>
+    <Fax>....</Fax>
+    <Mail></Mail>
+    <AdresseGestion>
+      <Rue></Rue>
+      <Complement></Complement>
+      <CodePostal></CodePostal>
+      <Ville></Ville>
+    </AdresseGestion>
+    <Besoins>
+      <Prevoyance></Prevoyance>
+      <Retraite></Retraite>
+      <Epargne></Epargne>
+      <Patrimoine></Patrimoine>
+      <Sante></Sante>
+    </Besoins>
+    <Notes></Notes>
+    <LienEntreprise>1</LienEntreprise>
+    <Gerant>0</Gerant>
+    <Conseillers>
+      <Conseiller Nom="" Societe="" Type="2"/>
+      <Conseiller Nom="Leroux" Societe="Leroux" Type="1"/>
+      <Conseiller Nom="" Societe="" Type="0"/>
+    </Conseillers>
+    <Revenus>
+      <SalaireAnnuel>0</SalaireAnnuel>
+      <TypeSalaire>brut</TypeSalaire>
+      <AutresRevenus>0</AutresRevenus>
+      <BIC>0</BIC>
+      <BNC>0</BNC>
+      <Dividendes>0</Dividendes>
+      <RevenusFonciers>0</RevenusFonciers>
+      <StatusPro>0</StatusPro>
+      <MoisBilan>0</MoisBilan>
+      <Employeur></Employeur>
+      <Fonction></Fonction>
+    </Revenus>
+    <Fiscalite>
+      <Montant>0</Montant>
+      <ISF>non</ISF>
+      <CGA_VGA>non</CGA_VGA>
+      <Deductions>0</Deductions>
+    </Fiscalite>
+    <Epargne Sensibilite="0">
+      <Motivation>
+        <Motivation1>0</Motivation1>
+        <Motivation2>0</Motivation2>
+        <Motivation3>0</Motivation3>
+        <Motivation4>0</Motivation4>
+      </Motivation>
+      <Retraites>
+        <Retraite type="4">
+          <DateEffet></DateEffet>
+          <InvAnnuel>0</InvAnnuel>
+          <MontantEpargne>0</MontantEpargne>
+          <DateEpargne></DateEpargne>
+          <Contrat></Contrat>
+          <Compagnie></Compagnie>
+        </Retraite>
+      </Retraites>
+      <AssuranceVies/>
+      <Comptes>
+        <Compte type="3">
+          <Compagnie>tt</Compagnie>
+          <DateEffet></DateEffet>
+          <InvAnnuel>56</InvAnnuel>
+          <Terme>ggg</Terme>
+          <Capital>56</Capital>
+          <DateCapital>2000-01-01</DateCapital>
+          <Rendement>66</Rendement>
+          <Notes>nnn</Notes>
+        </Compte>
+      </Comptes>
+      <Revenus>
+        <Revenu Designation="QQ" Montant="111"/>
+        <Revenu Designation="GGG" Montant="55"/>
+      </Revenus>
+      <Charges>
+        <Charge Designation="DD" Montant="44"/>
+        <Charge Designation="FF" Montant="66"/>
+      </Charges>
+    </Epargne>
+    <Prevoyance>
+      <NiveauGaranties>111</NiveauGaranties>
+      <IndiceSatisfaction>0</IndiceSatisfaction>
+      <CotisationAnnuelle>0</CotisationAnnuelle>
+      <Fiscalite></Fiscalite>
+      <Contrat></Contrat>
+      <Compagnie></Compagnie>
+      <Beneficiaires>0</Beneficiaires>
+      <Notes></Notes>
+      <Viager EnViager="non" type="Professionnel"/>
+      <DateEffet></DateEffet>
+      <Source>Amon</Source>
+      <ListeCouvertureEmprunt>
+        <Emprunt Banque="11" Debut="" Franchise="111" Montant="222" TauxMoyen="52685" Terme="52685" TypeEmprunt=""/>
+      </ListeCouvertureEmprunt>
+      <ArretMaladie>
+        <AccordAssocies>oui</AccordAssocies>
+        <DateEffet></DateEffet>
+        <DateMiseAJour></DateMiseAJour>
+        <Compagnie></Compagnie>
+        <Contrat></Contrat>
+        <Fiscalite>0</Fiscalite>
+        <DureeAccord>0</DureeAccord>
+        <FranchiseAccident>0</FranchiseAccident>
+        <FranchiseHopital>0</FranchiseHopital>
+        <FranchiseMaladie>0</FranchiseMaladie>
+        <ListeArretTravail>
+          <Arret Duree="0" Franchise="5" Montant="12"/>
+          <Arret Duree="1095" Franchise="90" Montant="15"/>
+          <Arret Duree="90" Franchise="15" Montant="15"/>
+        </ListeArretTravail>
+      </ArretMaladie>
+      <FraisGeneraux>
+        <Compagnie></Compagnie>
+        <Contrat></Contrat>
+        <CouvertureMensuelle>0</CouvertureMensuelle>
+        <Franchise>0</Franchise>
+        <Notes></Notes>
+      </FraisGeneraux>
+      <Invalidite Professionnel="oui">
+        <DateEffet></DateEffet>
+        <DateMiseAJour></DateMiseAJour>
+        <Compagnie></Compagnie>
+        <Fiscalite>0</Fiscalite>
+        <Notes></Notes>
+        <CapitauxInvalidite60>0</CapitauxInvalidite60>
+        <RenteInvalidite100>0</RenteInvalidite100>
+        <RenteInvalidite66>0</RenteInvalidite66>
+        <RenteInvalidite33>0</RenteInvalidite33>
+      </Invalidite>
+      <Deces>
+        <DateEffetConjoint></DateEffetConjoint>
+        <DateEffetEducation></DateEffetEducation>
+        <CompagnieConjoint></CompagnieConjoint>
+        <FiscaliteConjoint>0</FiscaliteConjoint>
+        <FiscaliteEducation>0</FiscaliteEducation>
+        <DureeRenteConjoint>0</DureeRenteConjoint>
+        <MontantRenteConjoint>0</MontantRenteConjoint>
+        <CompagnieEducation></CompagnieEducation>
+        <Notes></Notes>
+        <ListeGarantiesDeces>
+          <GarantieDeces Accident="11" Autre="" Beneficiaire="1" Capitaux="22" Compagnie="tt" DateEffet="" Duree="11" Fiscalite="1" Maladie="111"/>
+          <GarantieDeces Accident="0" Autre="" Beneficiaire="0" Capitaux="5" Compagnie="tt" DateEffet="" Duree="2" Fiscalite="0" Maladie="5"/>
+        </ListeGarantiesDeces>
+        <ListeRenteEducation>
+          <Rente Debut="5" Fin="10" Montant="0" Pourcentage="5"/>
+        </ListeRenteEducation>
+      </Deces>
+    </Prevoyance>
+    <Carriere>
+      <AgeRetraite>0</AgeRetraite>
+      <Emplois/>
+    </Carriere>
+  </Personne>
+
+</ListPersonnes>

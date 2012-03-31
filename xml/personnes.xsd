@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Deces">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="DateEffetConjoint"/>
+        <xs:element ref="DateEffetEducation"/>
+        <xs:element ref="CompagnieConjoint"/>
+        <xs:element ref="FiscaliteConjoint"/>
+        <xs:element ref="FiscaliteEducation"/>
+        <xs:element ref="DureeRenteConjoint"/>
+        <xs:element ref="MontantRenteConjoint"/>
+        <xs:element ref="CompagnieEducation"/>
+        <xs:element ref="Notes"/>
+        <xs:element ref="ListeGarantiesDeces"/>
+        <xs:element ref="ListeRenteEducation"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DureeRenteConjoint" type="xs:string"/>
+  <xs:element name="Telephone" type="xs:string"/>
+  <xs:element name="Contrat" type="xs:string"/>
+  <xs:element name="Gerant" type="xs:string"/>
+  <xs:element name="CotisationAnnuelle" type="xs:string"/>
+  <xs:element name="DateEffet" type="xs:string"/>
+  <xs:element name="Note" type="xs:string"/>
+  <xs:element name="Rente">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Rente"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Rente">
+    <xs:attribute name="Debut"/>
+    <xs:attribute name="Fin"/>
+    <xs:attribute name="Montant"/>
+    <xs:attribute name="Pourcentage"/>
+  </xs:attributeGroup>
+  <xs:element name="StatusPro" type="xs:string"/>
+  <xs:element name="AutresRevenus" type="xs:string"/>
+  <xs:element name="Emploi">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Note"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.Emploi"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Emploi">
+    <xs:attribute name="DateEntree"/>
+    <xs:attribute name="DateFin"/>
+    <xs:attribute name="PointsRCO"/>
+    <xs:attribute name="Revenus"/>
+    <xs:attribute name="Statut"/>
+  </xs:attributeGroup>
+  <xs:element name="Invalidite">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="DateMiseAJour"/>
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Fiscalite"/>
+        <xs:element ref="Notes"/>
+        <xs:element ref="CapitauxInvalidite60"/>
+        <xs:element ref="RenteInvalidite100"/>
+        <xs:element ref="RenteInvalidite66"/>
+        <xs:element ref="RenteInvalidite33"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Invalidite"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Invalidite">
+    <xs:attribute name="Professionnel"/>
+  </xs:attributeGroup>
+  <xs:element name="RevenusFonciers" type="xs:string"/>
+  <xs:element name="AssuranceVie">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Contrat"/>
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="InvAnnuel"/>
+        <xs:element ref="Terme"/>
+        <xs:element ref="Capital"/>
+        <xs:element ref="DateCapital"/>
+        <xs:element ref="DSK"/>
+        <xs:element ref="PEP"/>
+        <xs:element ref="MS"/>
+        <xs:element ref="FD"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListeRenteEducation">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Rente"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MoisBilan" type="xs:string"/>
+  <xs:element name="MontantISF" type="xs:string"/>
+  <xs:element name="CGA_VGA" type="xs:string"/>
+  <xs:element name="RenteInvalidite33" type="xs:string"/>
+  <xs:element name="DSK" type="xs:string"/>
+  <xs:element name="NiveauGaranties" type="xs:string"/>
+  <xs:element name="GarantieDeces">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.GarantieDeces"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.GarantieDeces">
+    <xs:attribute name="Accident"/>
+    <xs:attribute name="Autre"/>
+    <xs:attribute name="Beneficiaire"/>
+    <xs:attribute name="Capitaux"/>
+    <xs:attribute name="Compagnie"/>
+    <xs:attribute name="DateEffet"/>
+    <xs:attribute name="Duree"/>
+    <xs:attribute name="Fiscalite"/>
+    <xs:attribute name="Maladie"/>
+  </xs:attributeGroup>
+  <xs:element name="Capital" type="xs:string"/>
+  <xs:element name="TypeSalaire" type="xs:string"/>
+  <xs:element name="AgeRetraite" type="xs:string"/>
+  <xs:element name="Personne">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="NomJeuneFille"/>
+        <xs:element ref="DateNaissance"/>
+        <xs:element ref="LieuNaissance"/>
+        <xs:element ref="Adresse"/>
+        <xs:element ref="Telephone"/>
+        <xs:element ref="TelephonePortable"/>
+        <xs:element ref="TelephonePro"/>
+        <xs:element ref="Fax"/>
+        <xs:element ref="Mail"/>
+        <xs:element ref="AdresseGestion"/>
+        <xs:element ref="Besoins"/>
+        <xs:element ref="Notes"/>
+        <xs:element ref="LienEntreprise"/>
+        <xs:element ref="Gerant"/>
+        <xs:element ref="Conseillers"/>
+        <xs:element ref="Revenus"/>
+        <xs:element ref="Fiscalite"/>
+        <xs:element ref="Epargne"/>
+        <xs:element ref="Prevoyance"/>
+        <xs:element ref="Carriere"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Personne"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Personne">
+    <xs:attribute name="Beneficiaire"/>
+    <xs:attribute name="Civilite"/>
+    <xs:attribute name="ID"/>
+    <xs:attribute name="Nom"/>
+    <xs:attribute name="Prenom"/>
+  </xs:attributeGroup>
+  <xs:element name="Fiscalite">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Montant"/>
+        <xs:element ref="ISF"/>
+        <xs:element ref="MontantISF"/>
+        <xs:element ref="CGA_VGA"/>
+        <xs:element ref="Deductions"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Motivation3" type="xs:string"/>
+  <xs:element name="Franchise" type="xs:string"/>
+  <xs:element name="Viager">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Viager"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Viager">
+    <xs:attribute name="EnViager"/>
+    <xs:attribute name="type"/>
+  </xs:attributeGroup>
+  <xs:element name="MontantEpargne" type="xs:string"/>
+  <xs:element name="BIC" type="xs:string"/>
+  <xs:element name="Besoins">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Prevoyance"/>
+        <xs:element ref="Retraite"/>
+        <xs:element ref="Epargne"/>
+        <xs:element ref="Patrimoine"/>
+        <xs:element ref="Sante"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Revenus">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="SalaireAnnuel"/>
+        <xs:element ref="TypeSalaire"/>
+        <xs:element ref="AutresRevenus"/>
+        <xs:element ref="BIC"/>
+        <xs:element ref="BNC"/>
+        <xs:element ref="Dividendes"/>
+        <xs:element ref="RevenusFonciers"/>
+        <xs:element ref="StatusPro"/>
+        <xs:element ref="MoisBilan"/>
+        <xs:element ref="Employeur"/>
+        <xs:element ref="Fonction"/>
+        <xs:element ref="Revenu"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Epargne">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Motivation"/>
+        <xs:element ref="Retraites"/>
+        <xs:element ref="AssuranceVies"/>
+        <xs:element ref="Comptes"/>
+        <xs:element ref="Revenus"/>
+        <xs:element ref="Charges"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Epargne"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Epargne">
+    <xs:attribute name="Sensibilite"/>
+  </xs:attributeGroup>
+  <xs:element name="Notes" type="xs:string"/>
+  <xs:element name="Compte">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="InvAnnuel"/>
+        <xs:element ref="Terme"/>
+        <xs:element ref="Capital"/>
+        <xs:element ref="DateCapital"/>
+        <xs:element ref="Rendement"/>
+        <xs:element ref="Notes"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Compte"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Compte">
+    <xs:attribute name="type"/>
+  </xs:attributeGroup>
+  <xs:element name="Prevoyance">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="NiveauGaranties"/>
+        <xs:element ref="IndiceSatisfaction"/>
+        <xs:element ref="CotisationAnnuelle"/>
+        <xs:element ref="Fiscalite"/>
+        <xs:element ref="Contrat"/>
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Beneficiaires"/>
+        <xs:element ref="Notes"/>
+        <xs:element ref="Viager"/>
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="Source"/>
+        <xs:element ref="ListeCouvertureEmprunt"/>
+        <xs:element ref="ArretMaladie"/>
+        <xs:element ref="FraisGeneraux"/>
+        <xs:element ref="Invalidite"/>
+        <xs:element ref="Deces"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Motivation4" type="xs:string"/>
+  <xs:element name="ListPersonnes">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Personne"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="attlist.ListPersonnes"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.ListPersonnes">
+    <xs:attribute name="version"/>
+  </xs:attributeGroup>
+  <xs:element name="AssuranceVies">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="AssuranceVie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Revenu">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Revenu"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Revenu">
+    <xs:attribute name="Designation"/>
+    <xs:attribute name="Montant"/>
+  </xs:attributeGroup>
+  <xs:element name="ListeGarantiesDeces">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="GarantieDeces"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DateEffetEducation" type="xs:string"/>
+  <xs:element name="SalaireAnnuel" type="xs:string"/>
+  <xs:element name="Mail" type="xs:string"/>
+  <xs:element name="Terme" type="xs:string"/>
+  <xs:element name="DateNaissance" type="xs:string"/>
+  <xs:element name="Employeur" type="xs:string"/>
+  <xs:element name="Compagnie" type="xs:string"/>
+  <xs:element name="Rue" type="xs:string"/>
+  <xs:element name="Conseillers">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Conseiller"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Charge">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Charge"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Charge">
+    <xs:attribute name="Designation"/>
+    <xs:attribute name="Montant"/>
+  </xs:attributeGroup>
+  <xs:element name="ListeArretTravail">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Arret"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CapitauxInvalidite60" type="xs:string"/>
+  <xs:element name="Montant" type="xs:string"/>
+  <xs:element name="Carriere">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="AgeRetraite"/>
+        <xs:element ref="Emplois"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Deductions" type="xs:string"/>
+  <xs:element name="LieuNaissance" type="xs:string"/>
+  <xs:element name="Fax" type="xs:string"/>
+  <xs:element name="BNC" type="xs:string"/>
+  <xs:element name="Rendement" type="xs:string"/>
+  <xs:element name="Beneficiaires" type="xs:string"/>
+  <xs:element name="Motivation1" type="xs:string"/>
+  <xs:element name="MS" type="xs:string"/>
+  <xs:element name="FD" type="xs:string"/>
+  <xs:element name="AdresseGestion">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Rue"/>
+        <xs:element ref="Complement"/>
+        <xs:element ref="CodePostal"/>
+        <xs:element ref="Ville"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Conseiller">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Conseiller"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Conseiller">
+    <xs:attribute name="Nom"/>
+    <xs:attribute name="Societe"/>
+    <xs:attribute name="Type"/>
+  </xs:attributeGroup>
+  <xs:element name="Retraites">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Retraite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TelephonePortable" type="xs:string"/>
+  <xs:element name="PEP" type="xs:string"/>
+  <xs:element name="DureeAccord" type="xs:string"/>
+  <xs:element name="Arret">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Arret"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Arret">
+    <xs:attribute name="Duree"/>
+    <xs:attribute name="Franchise"/>
+    <xs:attribute name="Montant"/>
+  </xs:attributeGroup>
+  <xs:element name="DateCapital" type="xs:string"/>
+  <xs:element name="TelephonePro" type="xs:string"/>
+  <xs:element name="RenteInvalidite100" type="xs:string"/>
+  <xs:element name="Charges">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Charge"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Motivation2" type="xs:string"/>
+  <xs:element name="FranchiseHopital" type="xs:string"/>
+  <xs:element name="Emplois">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Emploi"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Dividendes" type="xs:string"/>
+  <xs:element name="Complement" type="xs:string"/>
+  <xs:element name="Sante" type="xs:string"/>
+  <xs:element name="FraisGeneraux">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Contrat"/>
+        <xs:element ref="CouvertureMensuelle"/>
+        <xs:element ref="Franchise"/>
+        <xs:element ref="Notes"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CompagnieConjoint" type="xs:string"/>
+  <xs:element name="AccordAssocies" type="xs:string"/>
+  <xs:element name="CouvertureMensuelle" type="xs:string"/>
+  <xs:element name="MontantRenteConjoint" type="xs:string"/>
+  <xs:element name="Ville" type="xs:string"/>
+  <xs:element name="RenteInvalidite66" type="xs:string"/>
+  <xs:element name="IndiceSatisfaction" type="xs:string"/>
+  <xs:element name="FranchiseAccident" type="xs:string"/>
+  <xs:element name="ISF" type="xs:string"/>
+  <xs:element name="FiscaliteEducation" type="xs:string"/>
+  <xs:element name="Fonction" type="xs:string"/>
+  <xs:element name="NomJeuneFille" type="xs:string"/>
+  <xs:element name="Emprunt">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.Emprunt"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Emprunt">
+    <xs:attribute name="Banque"/>
+    <xs:attribute name="Debut"/>
+    <xs:attribute name="Franchise"/>
+    <xs:attribute name="Montant"/>
+    <xs:attribute name="TauxMoyen"/>
+    <xs:attribute name="Terme"/>
+    <xs:attribute name="TypeEmprunt"/>
+  </xs:attributeGroup>
+  <xs:element name="CompagnieEducation" type="xs:string"/>
+  <xs:element name="Patrimoine" type="xs:string"/>
+  <xs:element name="ListeCouvertureEmprunt">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Emprunt"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CodePostal" type="xs:string"/>
+  <xs:element name="ArretMaladie">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="AccordAssocies"/>
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="DateMiseAJour"/>
+        <xs:element ref="Compagnie"/>
+        <xs:element ref="Contrat"/>
+        <xs:element ref="Fiscalite"/>
+        <xs:element ref="DureeAccord"/>
+        <xs:element ref="FranchiseAccident"/>
+        <xs:element ref="FranchiseHopital"/>
+        <xs:element ref="FranchiseMaladie"/>
+        <xs:element ref="ListeArretTravail"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Adresse">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Rue"/>
+        <xs:element ref="Complement"/>
+        <xs:element ref="CodePostal"/>
+        <xs:element ref="Ville"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DateMiseAJour" type="xs:string"/>
+  <xs:element name="Source" type="xs:string"/>
+  <xs:element name="LienEntreprise" type="xs:string"/>
+  <xs:element name="DateEpargne" type="xs:string"/>
+  <xs:element name="Retraite">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="DateEffet"/>
+        <xs:element ref="InvAnnuel"/>
+        <xs:element ref="MontantEpargne"/>
+        <xs:element ref="DateEpargne"/>
+        <xs:element ref="Contrat"/>
+        <xs:element ref="Compagnie"/>
+      </xs:choice>
+      <xs:attributeGroup ref="attlist.Retraite"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.Retraite">
+    <xs:attribute name="type"/>
+  </xs:attributeGroup>
+  <xs:element name="Motivation">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="Motivation1"/>
+        <xs:element ref="Motivation2"/>
+        <xs:element ref="Motivation3"/>
+        <xs:element ref="Motivation4"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FranchiseMaladie" type="xs:string"/>
+  <xs:element name="Comptes">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="Compte"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FiscaliteConjoint" type="xs:string"/>
+  <xs:element name="DateEffetConjoint" type="xs:string"/>
+  <xs:element name="InvAnnuel" type="xs:string"/>
+</xs:schema>

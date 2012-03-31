@@ -1,0 +1,162 @@
+<!ELEMENT Deces (#PCDATA | DateEffetConjoint | DateEffetEducation | CompagnieConjoint | FiscaliteConjoint | FiscaliteEducation | DureeRenteConjoint | MontantRenteConjoint | CompagnieEducation | Notes | ListeGarantiesDeces | ListeRenteEducation)*>
+<!ELEMENT DureeRenteConjoint (#PCDATA)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Contrat (#PCDATA)>
+<!ELEMENT Gerant (#PCDATA)>
+<!ELEMENT CotisationAnnuelle (#PCDATA)>
+<!ELEMENT DateEffet (#PCDATA)>
+<!ELEMENT Note (#PCDATA)>
+<!ELEMENT Rente (#PCDATA)>
+<!ATTLIST Rente Debut CDATA #IMPLIED>
+<!ATTLIST Rente Fin CDATA #IMPLIED>
+<!ATTLIST Rente Montant CDATA #IMPLIED>
+<!ATTLIST Rente Pourcentage CDATA #IMPLIED>
+<!ELEMENT StatusPro (#PCDATA)>
+<!ELEMENT AutresRevenus (#PCDATA)>
+<!ELEMENT Emploi (#PCDATA | Note)*>
+<!ATTLIST Emploi DateEntree CDATA #IMPLIED>
+<!ATTLIST Emploi DateFin CDATA #IMPLIED>
+<!ATTLIST Emploi PointsRCO CDATA #IMPLIED>
+<!ATTLIST Emploi Revenus CDATA #IMPLIED>
+<!ATTLIST Emploi Statut CDATA #IMPLIED>
+<!ELEMENT Invalidite (#PCDATA | DateEffet | DateMiseAJour | Compagnie | Fiscalite | Notes | CapitauxInvalidite60 | RenteInvalidite100 | RenteInvalidite66 | RenteInvalidite33)*>
+<!ATTLIST Invalidite Professionnel CDATA #IMPLIED>
+<!ELEMENT RevenusFonciers (#PCDATA)>
+<!ELEMENT AssuranceVie (#PCDATA | Contrat | Compagnie | DateEffet | InvAnnuel | Terme | Capital | DateCapital | DSK | PEP | MS | FD)*>
+<!ELEMENT ListeRenteEducation (#PCDATA | Rente)*>
+<!ELEMENT MoisBilan (#PCDATA)>
+<!ELEMENT MontantISF (#PCDATA)>
+<!ELEMENT CGA_VGA (#PCDATA)>
+<!ELEMENT RenteInvalidite33 (#PCDATA)>
+<!ELEMENT DSK (#PCDATA)>
+<!ELEMENT NiveauGaranties (#PCDATA)>
+<!ELEMENT GarantieDeces (#PCDATA)>
+<!ATTLIST GarantieDeces Accident CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Autre CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Beneficiaire CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Capitaux CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Compagnie CDATA #IMPLIED>
+<!ATTLIST GarantieDeces DateEffet CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Duree CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Fiscalite CDATA #IMPLIED>
+<!ATTLIST GarantieDeces Maladie CDATA #IMPLIED>
+<!ELEMENT Capital (#PCDATA)>
+<!ELEMENT TypeSalaire (#PCDATA)>
+<!ELEMENT AgeRetraite (#PCDATA)>
+<!ELEMENT Personne (#PCDATA | NomJeuneFille | DateNaissance | LieuNaissance | Adresse | Telephone | TelephonePortable | TelephonePro | Fax | Mail | AdresseGestion | Besoins | Notes | LienEntreprise | Gerant | Conseillers | Revenus | Fiscalite | Epargne | Prevoyance | Carriere)*>
+<!ATTLIST Personne Beneficiaire CDATA #IMPLIED>
+<!ATTLIST Personne Civilite CDATA #IMPLIED>
+<!ATTLIST Personne ID CDATA #IMPLIED>
+<!ATTLIST Personne Nom CDATA #IMPLIED>
+<!ATTLIST Personne Prenom CDATA #IMPLIED>
+<!ELEMENT Fiscalite (#PCDATA | Montant | ISF | MontantISF | CGA_VGA | Deductions)*>
+<!ELEMENT Motivation3 (#PCDATA)>
+<!ELEMENT Franchise (#PCDATA)>
+<!ELEMENT Viager (#PCDATA)>
+<!ATTLIST Viager EnViager CDATA #IMPLIED>
+<!ATTLIST Viager type CDATA #IMPLIED>
+<!ELEMENT MontantEpargne (#PCDATA)>
+<!ELEMENT BIC (#PCDATA)>
+<!ELEMENT Besoins (#PCDATA | Prevoyance | Retraite | Epargne | Patrimoine | Sante)*>
+<!ELEMENT Revenus (#PCDATA | SalaireAnnuel | TypeSalaire | AutresRevenus | BIC | BNC | Dividendes | RevenusFonciers | StatusPro | MoisBilan | Employeur | Fonction | Revenu)*>
+<!ELEMENT Epargne (#PCDATA | Motivation | Retraites | AssuranceVies | Comptes | Revenus | Charges)*>
+<!ATTLIST Epargne Sensibilite CDATA #IMPLIED>
+<!ELEMENT Notes (#PCDATA)>
+<!ELEMENT Compte (#PCDATA | Compagnie | DateEffet | InvAnnuel | Terme | Capital | DateCapital | Rendement | Notes)*>
+<!ATTLIST Compte type CDATA #IMPLIED>
+<!ELEMENT Prevoyance (#PCDATA | NiveauGaranties | IndiceSatisfaction | CotisationAnnuelle | Fiscalite | Contrat | Compagnie | Beneficiaires | Notes | Viager | DateEffet | Source | ListeCouvertureEmprunt | ArretMaladie | FraisGeneraux | Invalidite | Deces)*>
+<!ELEMENT Motivation4 (#PCDATA)>
+<!ELEMENT ListPersonnes (#PCDATA | Personne)*>
+<!ATTLIST ListPersonnes version CDATA #IMPLIED>
+<!ELEMENT AssuranceVies (#PCDATA | AssuranceVie)*>
+<!ELEMENT Revenu (#PCDATA)>
+<!ATTLIST Revenu Designation CDATA #IMPLIED>
+<!ATTLIST Revenu Montant CDATA #IMPLIED>
+<!ELEMENT ListeGarantiesDeces (#PCDATA | GarantieDeces)*>
+<!ELEMENT DateEffetEducation (#PCDATA)>
+<!ELEMENT SalaireAnnuel (#PCDATA)>
+<!ELEMENT Mail (#PCDATA)>
+<!ELEMENT Terme (#PCDATA)>
+<!ELEMENT DateNaissance (#PCDATA)>
+<!ELEMENT Employeur (#PCDATA)>
+<!ELEMENT Compagnie (#PCDATA)>
+<!ELEMENT Rue (#PCDATA)>
+<!ELEMENT Conseillers (#PCDATA | Conseiller)*>
+<!ELEMENT Charge (#PCDATA)>
+<!ATTLIST Charge Designation CDATA #IMPLIED>
+<!ATTLIST Charge Montant CDATA #IMPLIED>
+<!ELEMENT ListeArretTravail (#PCDATA | Arret)*>
+<!ELEMENT CapitauxInvalidite60 (#PCDATA)>
+<!ELEMENT Montant (#PCDATA)>
+<!ELEMENT Carriere (#PCDATA | AgeRetraite | Emplois)*>
+<!ELEMENT Deductions (#PCDATA)>
+<!ELEMENT LieuNaissance (#PCDATA)>
+<!ELEMENT Fax (#PCDATA)>
+<!ELEMENT BNC (#PCDATA)>
+<!ELEMENT Rendement (#PCDATA)>
+<!ELEMENT Beneficiaires (#PCDATA)>
+<!ELEMENT Motivation1 (#PCDATA)>
+<!ELEMENT MS (#PCDATA)>
+<!ELEMENT FD (#PCDATA)>
+<!ELEMENT AdresseGestion (#PCDATA | Rue | Complement | CodePostal | Ville)*>
+<!ELEMENT Conseiller (#PCDATA)>
+<!ATTLIST Conseiller Nom CDATA #IMPLIED>
+<!ATTLIST Conseiller Societe CDATA #IMPLIED>
+<!ATTLIST Conseiller Type CDATA #IMPLIED>
+<!ELEMENT Retraites (#PCDATA | Retraite)*>
+<!ELEMENT TelephonePortable (#PCDATA)>
+<!ELEMENT PEP (#PCDATA)>
+<!ELEMENT DureeAccord (#PCDATA)>
+<!ELEMENT Arret (#PCDATA)>
+<!ATTLIST Arret Duree CDATA #IMPLIED>
+<!ATTLIST Arret Franchise CDATA #IMPLIED>
+<!ATTLIST Arret Montant CDATA #IMPLIED>
+<!ELEMENT DateCapital (#PCDATA)>
+<!ELEMENT TelephonePro (#PCDATA)>
+<!ELEMENT RenteInvalidite100 (#PCDATA)>
+<!ELEMENT Charges (#PCDATA | Charge)*>
+<!ELEMENT Motivation2 (#PCDATA)>
+<!ELEMENT FranchiseHopital (#PCDATA)>
+<!ELEMENT Emplois (#PCDATA | Emploi)*>
+<!ELEMENT Dividendes (#PCDATA)>
+<!ELEMENT Complement (#PCDATA)>
+<!ELEMENT Sante (#PCDATA)>
+<!ELEMENT FraisGeneraux (#PCDATA | Compagnie | Contrat | CouvertureMensuelle | Franchise | Notes)*>
+<!ELEMENT CompagnieConjoint (#PCDATA)>
+<!ELEMENT AccordAssocies (#PCDATA)>
+<!ELEMENT CouvertureMensuelle (#PCDATA)>
+<!ELEMENT MontantRenteConjoint (#PCDATA)>
+<!ELEMENT Ville (#PCDATA)>
+<!ELEMENT RenteInvalidite66 (#PCDATA)>
+<!ELEMENT IndiceSatisfaction (#PCDATA)>
+<!ELEMENT FranchiseAccident (#PCDATA)>
+<!ELEMENT ISF (#PCDATA)>
+<!ELEMENT FiscaliteEducation (#PCDATA)>
+<!ELEMENT Fonction (#PCDATA)>
+<!ELEMENT NomJeuneFille (#PCDATA)>
+<!ELEMENT Emprunt (#PCDATA)>
+<!ATTLIST Emprunt Banque CDATA #IMPLIED>
+<!ATTLIST Emprunt Debut CDATA #IMPLIED>
+<!ATTLIST Emprunt Franchise CDATA #IMPLIED>
+<!ATTLIST Emprunt Montant CDATA #IMPLIED>
+<!ATTLIST Emprunt TauxMoyen CDATA #IMPLIED>
+<!ATTLIST Emprunt Terme CDATA #IMPLIED>
+<!ATTLIST Emprunt TypeEmprunt CDATA #IMPLIED>
+<!ELEMENT CompagnieEducation (#PCDATA)>
+<!ELEMENT Patrimoine (#PCDATA)>
+<!ELEMENT ListeCouvertureEmprunt (#PCDATA | Emprunt)*>
+<!ELEMENT CodePostal (#PCDATA)>
+<!ELEMENT ArretMaladie (#PCDATA | AccordAssocies | DateEffet | DateMiseAJour | Compagnie | Contrat | Fiscalite | DureeAccord | FranchiseAccident | FranchiseHopital | FranchiseMaladie | ListeArretTravail)*>
+<!ELEMENT Adresse (#PCDATA | Rue | Complement | CodePostal | Ville)*>
+<!ELEMENT DateMiseAJour (#PCDATA)>
+<!ELEMENT Source (#PCDATA)>
+<!ELEMENT LienEntreprise (#PCDATA)>
+<!ELEMENT DateEpargne (#PCDATA)>
+<!ELEMENT Retraite (#PCDATA | DateEffet | InvAnnuel | MontantEpargne | DateEpargne | Contrat | Compagnie)*>
+<!ATTLIST Retraite type CDATA #IMPLIED>
+<!ELEMENT Motivation (#PCDATA | Motivation1 | Motivation2 | Motivation3 | Motivation4)*>
+<!ELEMENT FranchiseMaladie (#PCDATA)>
+<!ELEMENT Comptes (#PCDATA | Compte)*>
+<!ELEMENT FiscaliteConjoint (#PCDATA)>
+<!ELEMENT DateEffetConjoint (#PCDATA)>
+<!ELEMENT InvAnnuel (#PCDATA)>

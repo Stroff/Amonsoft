@@ -1,0 +1,284 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>dlgEmprunt</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>dlgEmprunt</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>516</width>
+            <height>319</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>5</hsizetype>
+            <vsizetype>5</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Ajouter un emprunt</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="12" colspan="1">
+            <property name="name">
+                <cstring>pixmapLabel2</cstring>
+            </property>
+            <property name="pixmap">
+                <pixmap>dlg_emprunt.PNG</pixmap>
+            </property>
+            <property name="scaledContents">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="11" column="1" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>pushButtonOk</cstring>
+            </property>
+            <property name="text">
+                <string>Valider</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="11" column="5">
+            <property name="name">
+                <cstring>pushButtonKo</cstring>
+            </property>
+            <property name="text">
+                <string>Annuler</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="3" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>lineEditEmpruntFranchise</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Franchise de l'emprunt</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="4" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Banque</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>lineEditEmpruntMontant</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>LineEditPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Montant emprunté</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Franchise (€)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Montant de l'emprunt</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="6" column="1">
+            <property name="name">
+                <cstring>textLabel2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Date début</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="7" column="1">
+            <property name="name">
+                <cstring>textLabel3_2</cstring>
+            </property>
+            <property name="text">
+                <string>Terme</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="8" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel4</cstring>
+            </property>
+            <property name="text">
+                <string>Taux moyen (%)</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="9" column="1">
+            <property name="name">
+                <cstring>textLabel5</cstring>
+            </property>
+            <property name="text">
+                <string>Type emprunt</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="10" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>lineEditEmpruntType</cstring>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="5" column="1" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>lineEditEmpruntBanque</cstring>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Banque dans laquelle l'emprunt a été contracté</string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="8" column="3">
+            <property name="name">
+                <cstring>lineEditEmpruntTaux</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="7" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditEmpruntTerme</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>3</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="inputMask">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="6" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>lineEditEmpruntDateDebut</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="inputMask">
+                <string>00/00/0000;_</string>
+            </property>
+        </widget>
+        <spacer row="6" column="4" rowspan="4" colspan="2">
+            <property name="name">
+                <cstring>spacer31</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>110</width>
+                    <height>101</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>pushButtonKo</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEmprunt</receiver>
+        <slot>close()</slot>
+    </connection>
+    <connection>
+        <sender>pushButtonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>dlgEmprunt</receiver>
+        <slot>Ok()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>lineEditEmpruntMontant</tabstop>
+    <tabstop>lineEditEmpruntFranchise</tabstop>
+    <tabstop>lineEditEmpruntBanque</tabstop>
+    <tabstop>lineEditEmpruntDateDebut</tabstop>
+    <tabstop>lineEditEmpruntTerme</tabstop>
+    <tabstop>lineEditEmpruntTaux</tabstop>
+    <tabstop>lineEditEmpruntType</tabstop>
+    <tabstop>pushButtonOk</tabstop>
+    <tabstop>pushButtonKo</tabstop>
+</tabstops>
+<includes>
+    <include location="local" impldecl="in implementation">emprunt.ui.h</include>
+</includes>
+<slots>
+    <slot>Ok()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
